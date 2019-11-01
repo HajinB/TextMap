@@ -1,8 +1,6 @@
 # DAFE1200-Final-assignment
 
-# Ide
-
-  Ikke bestemt enda
+  Innledning/Ide ikke bestemt enda.
 
 ## Gruppemedlemmer
 
