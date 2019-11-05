@@ -1,14 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    background-color: #dddddd;
-}
-
-body {
-    border: 20px solid red;
-    border-radius: 20px:
-}
-
+    padding: 0; 
+} 
+ 
+body { 
+    height: 2000px; 
+} 
+ 
+#headBoks { 
+    background-color: #dddddd; 
+    display: grid; 
+    grid-template-columns: 20% 80%; 
+    position: fixed; 
+    width: 100%; 
+} 
+ 
+#aLogo{ 
+    max-height: 100%; 
+} 
+ 
+#logo { 
+    height: 100%; 
+    max-height: 100%; 
+} 
+ 
+#txtListe { 
+    width: 100%; 
+    text-align: center; 
+} 
+ 
+#txtListe > li{ 
+    display: inline-block; 
+    margin: 0 10px; 
+} 
+ 
+.txtHead { 
+    text-decoration: none; 
+    color: black; 
+    font-size: 2em; 
+} 
+ 
