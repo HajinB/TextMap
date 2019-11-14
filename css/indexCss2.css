@@ -1,17 +1,14 @@
 * {
     margin: 0;
     padding: 0; 
-} 
- 
-body { 
-    height: 2000px; 
-} 
+}  
 
 #header {
     position: fixed;
     background-color: #dddddd; 
     width: 100%;
     height: 85px;
+    margin: -100px 0 0 0;
 }
 
 #headBoks { 
@@ -39,12 +36,43 @@ body {
 #txtListe > li{ 
     list-style: none;
     display: inline-block;
-    margin: 0 2em;
+    margin: 0 1.5em;
 } 
  
 .txtHead { 
     text-decoration: none; 
     color: black; 
-    font-size: 2em; 
+    font-size: 1.7em; 
 } 
+
+.content {
+    background-color: white;
+    width: 90%;
+    margin: 1em auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content1 {
+    margin: 100px auto 1em auto;
+}
+
+.contentHead, .prototypeHead {
+    text-align: center;
+}
+
+.contentTxt, .prototypeTxt {
+    margin: 1em;
+    line-height: 1.5em;
+
+}
+
+.prototype {
+    background-color: white;
+    width: 90%;
+    margin: 1em auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
  
