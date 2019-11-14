@@ -115,7 +115,7 @@ a.skipLink:hover {
     margin-right: 0;
         float: left;
         justify-content: right;
-        flex: 0.4; 
+        flex: 0.5; 
       
     
         
@@ -158,7 +158,7 @@ main{
 }
 
 #header {
-    background-color:#550f78;
+    background-color:#7d2ea5;
    
     width: 100%;
     height: 20vh; 

@@ -7,16 +7,12 @@ body {
     background-color: #eeeeee;
 }
 
-div {
-    border: 1px solid red;
-    
-}
-
 .content {
     background-color: white;
     width: 90%;
     margin: 1em auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2em;
 }
 
 .content > h1, h2 {
