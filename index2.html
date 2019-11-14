@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Title</title> 
-    <link rel="stylesheet" type="text/css" href="css/indexCss2.css"> 
-</head> 
-<body> 
-    <div id="header">  
-         
-        <nav id="headBoks"> 
-            <a href="#" id="aLogo"><img id="logo" src="media/logo.png"></a> 
-            <ul id="txtListe"> 
-                <li><a class="txtHead" href="#">Home</a></li> 
-                <li><a class="txtHead" href="#">Problem</a></li> 
-            </ul> 
-        </nav> 
-         
-    </div>  
-    
-    <div class="content" id="content1">
-        <h1 class="contentHead">Problem</h1>
-        <p class="contentTxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo laborum molestias 
-            odio dolorum a alias, iste dolores cupiditate voluptate aliquid et doloremque ratione 
-            natus quod. Perspiciatis eaque quo eius, iusto ipsa recusandae saepe quod natus. Assumenda 
-            officia deleniti aut animi eos sint, velit ut. Vero sunt vitae quasi fugiat!
-        </p>
-        <h2 class="contentHead">Survey</h2>
-        <p class="contentTxt">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nisi dicta ipsum 
-            laborum voluptatibus explicabo cumque ab! Eligendi architecto nihil nisi fuga 
-            accusamus dolores mollitia facere laborum eos nesciunt, est repellat assumenda nam 
-            officia perspiciatis excepturi veritatis praesentium reiciendis omnis molestiae. 
-            Nostrum, natus saepe repudiandae amet quod illum quisquam exercitationem est cumque 
-            quas, velit voluptates corrupti mollitia assumenda voluptas excepturi, debitis omnis! Aut, minus adipisci.
-        </p>
-    </div>
 
-    <div class="content">
-        <h1 class="contentHead">Solution</h1>
-        <p class="contentTxt">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt sed quod, 
-            laboriosam delectus consequatur accusantium ducimus aliquam cumque, distinctio veniam 
-            vitae ex nostrum sit doloremque quia, suscipit alias officia! Numquam, aliquid tenetur 
-            nulla odit molestiae, commodi magnam dolore itaque magni culpa voluptatibus vero at 
-            consequuntur accusamus assumenda! Ut velit porro eligendi ipsa totam maxime perspiciatis 
-            neque! Culpa totam accusantium enim eum facere maxime architecto nobis a unde? Ipsam earum 
-            cumque ipsa vero, quasi vel veritatis omnis aperiam. Itaque maiores eveniet natus quo 
-            reprehenderit, dicta eum! Iusto eum fugit, quia omnis ea similique. Voluptas, quia fugiat 
-            nihil cupiditate consectetur eveniet!
-        </p>
-    </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/indexCss2.css">
+</head>
 
-    <div class="prototype">
-        <h1 class="prototypeHead">Prototype</h1>
-        <p class="prototypeTxt">
-            Slideshow1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in 
-            optio tempore dignissimos, sit accusamus quos incidunt? Quis quod, repudiandae 
-            sunt error accusamus vitae nemo, dolor, laborum dolorem sed nihil?
-        </p>
+<body>
 
-        <p class="prototypeTxt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore omnis ab 
-            vero, doloremque rem. Possimus odit illo doloribus, corporis beatae exercitationem ab, 
-            quibusdam velit similique veniam nam. Incidunt, officia.
+    <nav tabindex="-1" class="controls" id="controls">
+       
+       
+
+        <ul class="ul-controls">
+                <li class="li-skipLink">
+                <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to content
+                    </a>
+                </li>
+
+
+            <li class="textSize">
+                <a class="txtControls" href="#k"><span aria-hidden="true" class="textSizeLogo"></span>Change Text
+                    Size </a>
+            </li>
+            <li class="li-language">
+                <a class="txtControls" href="#lang">
+
+               Language
+
+                </a>
+
+            </li>
+       
+    </ul>
+    </nav>
+    <nav id="header">
+        <div id="headBoks">
+            
+            <a class="logoHead" href="#"><span class="logotext">MapText</span><img id="aLogo" id="logo" src="media/logo.png" alt="banner"></a>
+           
+            <button aria-expanded="true" id="hamburger">
+                <span><img src="media/iconfinder_menu-alt_134216.png" alt="" role="menu">Menu</span>
+            </button>
+
+            <ul id="txtListe">
+                <li class="home"><a class="txtHead active" href="#">Home</a></li>
+                <li class="problem"><a class="txtHead" href="#">Problem</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1 id="mainheader">MainHeader</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nobis, perferendis suscipit, quos sunt
+            voluptate ex quia voluptas laboriosam minus ducimus eius modi aliquam odit. Velit reprehenderit, modi iste
+            quis enim aut corporis magni quos autem. Nesciunt voluptas iusto corporis eius voluptate illum sint vel
+            ullam accusamus hic quisquam architecto ea doloremque, recusandae eligendi consectetur animi odit debitis
+            rerum est repudiandae suscipit. Voluptas voluptatem repellendus placeat explicabo adipisci aliquam sint esse
+            asperiores quis ex. Ratione molestiae illum nihil sapiente itaque.
         </p>
-    </div>
-</body> 
-</html> 
+        <a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan"> Back to Top</span></a>
+
+    </main>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

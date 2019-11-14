@@ -1,4 +1,4 @@
-.hopptilmain {
+.skipLink {
     position: absolute;
     top: -1000px;
     left: -1000px;
@@ -8,9 +8,9 @@
     overflow: hidden;
 }
 
-a.hopptilmain:active, 
-a.hopptilmain:focus, 
-a.hopptilmain:hover {
+a.skipLink:active, 
+a.skipLink:focus, 
+a.skipLink:hover {
     left: 0; 
     top: 0;
     width: auto; 
