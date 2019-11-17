@@ -1,3 +1,5 @@
+/* Phone */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@ body {
     background-color: #eeeeee;
 }
 
-.content {
+.content, .prototype {
     background-color: white;
     width: 90%;
     margin: 1em auto;
@@ -19,32 +21,67 @@ body {
     text-align: center;
 }
 
-.content > p {
+.text {
     margin: 1em;
     line-height: 1.5em;
 
-}
-
-.prototype {
-    background-color: white;
-    width: 90%;
-    margin: 1em auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .prototype > h1, h2 {
     text-align: center;
 }
 
-.prototype > p {
-    margin: 1em;
-    line-height: 1.5em;
-
-}
-
-.prototype > img {
+.slideImages {
     display: block;
     margin: 1em auto;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+    .text {
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+
+    .prototypeContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slideImages {
+        width: 70%;
+    }
+
+    .textSize, .li-language {
+        font-size: 1.5em;
+    }
+
+
+}
+
+/* Computer */
+@media only screen and (min-width: 1200px) {
+    .text {
+        font-size: 1em;
+    }
+
+    .textSize, .li-language {
+        font-size: 1.2em;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .prototypeContent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .slideImages  {
+        width: 55%;
+    }
+
+
 }
