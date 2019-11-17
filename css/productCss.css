@@ -1,5 +1,4 @@
 /* Phone */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +16,9 @@ body {
     margin-bottom: 2em;
 }
 
-.content > h1, h2 {
+.title {
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .text {
@@ -27,9 +27,7 @@ body {
 
 }
 
-.prototype > h1, h2 {
-    text-align: center;
-}
+
 
 .slideImages {
     display: block;
@@ -48,6 +46,7 @@ body {
     .prototypeContent {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
     }
 
     .slideImages {
@@ -56,6 +55,16 @@ body {
 
     .textSize, .li-language {
         font-size: 1.5em;
+    }
+
+    .prototype {
+        background-color: #eeeeee;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .slides {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 
@@ -77,11 +86,10 @@ body {
 
     .prototypeContent {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
     }
 
     .slideImages  {
-        width: 55%;
+        width: 40%;
     }
-
-
 }
