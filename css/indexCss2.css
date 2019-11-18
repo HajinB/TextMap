@@ -121,7 +121,7 @@ a.skipLink:hover {
 
 
 }
-#textSize {
+.textSize {
     /*grid-column: 2;*/
     width: 0.333em;
     border-right: 1px solid black;
@@ -188,7 +188,7 @@ a.skipLink:hover {
     font-size: 2em;
 }
 
-#textSize:hover #textSizeDrop {
+.textSize:hover #textSizeDrop {
     display: block;
 }
 
