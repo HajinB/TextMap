@@ -12,15 +12,18 @@ for(var i = 0; i < evtTextSize.length; i++){
 }
 
 function endreTextSize(n) {
-    var htmlCss = document.getElementsByTagName("html");
+    var textSizeDrop = document.getElementById("textSizeDrop");
     if(n == 0){
-        htmlCss[0].style.fontSize = "medium";
+        textSizeDrop.style.fontSize = "0.5em";
     }
     else if(n == 1){
-        htmlCss[0].style.fontSize = "large";
+        textSizeDrop.style.fontSize = "1em";
     }
     else if(n == 2){
-        htmlCss[0].style.fontSize = "x-large";
+        textSizeDrop.style.fontSize = "1.5em";
+    }
+    else if(n == 3){
+        textSizeDrop.style.fontSize = "2em";
     }
 }
 

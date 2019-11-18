@@ -121,7 +121,6 @@ a.skipLink:hover {
 
 
 }
-
 #textSize {
     /*grid-column: 2;*/
     width: 0.333em;
@@ -139,6 +138,27 @@ a.skipLink:hover {
     -ms-flex: 0.5;
     flex: 0.5;
     position: relative;
+    font-size: 1.3em;
+}
+
+.textSize {
+    /*grid-column: 2;*/
+    width: 0.333em;
+    border-right: 1px solid black;
+    /* box-shadow: 0 3px 10px 1px black; */
+    margin-left: 20vw;
+    display: inline-block;
+    text-align: center;
+    margin-right: 0;
+    float: left;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    -webkit-box-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    position: relative;
+    font-size: 1.3em;
 }
 
 #textSizeDrop {
@@ -195,6 +215,7 @@ a.skipLink:hover {
     display: block;
     color: white;
     text-align: center;
+    font-size: 1.3em;
     /* box-shadow: 0 3px 10px 1px black; */
 
 }
@@ -206,7 +227,8 @@ a.skipLink:hover {
     height: 20vh;
     min-height: 120px;
     /*height: 85px;*/
-    height: 5.3rem;
+    height: 5.3em;
+    min-height: 8em;
 }
 
 #headBoks {
@@ -282,9 +304,18 @@ a.skipLink:hover {
 #txtListe > li {
     list-style: none;
     display: inline-block;
-    margin: 0.6em 3.1em;
+      margin: 0.6em 1.9em; 
 }
 
+
+@media screen and (max-width: 633px){
+    #txtListe > li{
+    margin: 0.6em 1.2em; 
+    }
+}
+
+
+/* her er margin til home */
 
 .home {
     width: 30%;
@@ -487,6 +518,11 @@ ul#sitemapProblem{
 
     }
 
+    #personer>li{
+        margin: 0;
+        width: 33%;
+    }
+
     .problem {
         float: center;
         width: 45%;
@@ -498,8 +534,9 @@ ul#sitemapProblem{
 
         width: 100%;
         height: 20vh;
-        min-height: 120px;
+       /* min-height: 120px; */
         /*height: 85px;*/
+        min-height: 8em;
     }
 
     #txtListe > li {
