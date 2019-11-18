@@ -1,4 +1,3 @@
-
 var evtTextSize = document.querySelectorAll(".textSizeValg");
 for(var i = 0; i < evtTextSize.length; i++){
     var self = evtTextSize[i];
@@ -12,27 +11,14 @@ for(var i = 0; i < evtTextSize.length; i++){
 }
 
 function endreTextSize(n) {
-    var textSizeDrop = document.getElementById("textSizeDrop");
+    var htmlCss = document.getElementsByTagName("html");
     if(n == 0){
-        textSizeDrop.style.fontSize = "0.5em";
+        htmlCss[0].style.fontSize = "medium";
     }
     else if(n == 1){
-        textSizeDrop.style.fontSize = "1em";
+        htmlCss[0].style.fontSize = "large";
     }
     else if(n == 2){
-        textSizeDrop.style.fontSize = "1.5em";
-    }
-    else if(n == 3){
-        textSizeDrop.style.fontSize = "2em";
+        htmlCss[0].style.fontSize = "x-large";
     }
 }
-
-/*
-document.getElementById('backToTop').addEventListener('click', function(e) {
-    e.preventDefault();
-    var target = document.getElementById('controls');
-    target.setAttribute('tabindex', '-1');
-    target.focus();
-  });
-
-  */
