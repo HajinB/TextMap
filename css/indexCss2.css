@@ -32,6 +32,9 @@ main{
 ul > li {
     list-style: none;
 }
+.siteMapItem{
+    border-bottom: 1px solid #717171;
+}
 
 .active {
     border-bottom: 1px solid #ffd79c;
@@ -77,8 +80,6 @@ a.skipLink:hover {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-
-
 }
 
 .controls {
@@ -116,11 +117,9 @@ a.skipLink:hover {
 .txtControls {
     text-decoration: none;
     font-size: 0.9em;
-
     height: 10vh;
-
-
 }
+
 .textSize {
     /*grid-column: 2;*/
     width: 0.333em;
@@ -175,6 +174,12 @@ a.skipLink:hover {
 .textSizeValg:hover {
     border: 1px solid black;
 }
+.text{
+    margin: 0 2em;
+}
+figcpation{
+    margin: 0 !important;
+}
 
 .textSizeValg:nth-child(odd){
     background-color: #EEDCEE;
@@ -210,12 +215,12 @@ a.skipLink:hover {
     -webkit-box-flex: 0.3;
     -ms-flex: 0.3;
     flex: 0.3;
-
     width: 33%;
     display: block;
     color: white;
     text-align: center;
     font-size: 1.3em;
+    margin-left: 1vw;
     /* box-shadow: 0 3px 10px 1px black; */
 
 }
@@ -270,11 +275,12 @@ a.skipLink:hover {
 .logotext {
     position: absolute;
     display: block;
+    float: left;
     color: white;
     display: block;
     font-size: 1.2em;
-    top: 100px;
-    margin-left: 23px;
+    top: 100px; 
+    margin-left: 0.9em; /* /* hvis tekst størrelsen er stor - endre denne til em . . . . */
 
 }
 
@@ -306,13 +312,44 @@ a.skipLink:hover {
     display: inline-block;
       margin: 0.6em 1.9em; 
 }
+.presentation{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    margin-left: 10vw;
+    text-align: left;
+    display: inline-block;
+    margin-top: 2em;
+}
 
+.circle{
+    border-radius: 50%;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+   
+}
+
+.presentationLogo{
+    width: auto;
+    height: 90px;
+    position: absolute;
+    
+   
+}
 
 @media screen and (max-width: 633px){
     #txtListe > li{
     margin: 0.6em 1.2em; 
     }
+
+    .presentation{
+        width: 80%;
+       
 }
+}
+
+
 
 
 /* her er margin til home */
@@ -408,7 +445,7 @@ background-color: #550f78;
 
 
 }
-.sitater h2{
+.sitater h1{
     margin: 4em 2em;
     vertical-align: middle;
 }
@@ -423,7 +460,8 @@ background-color: #550f78;
     background-color: #FFECE0;
 }
 .videoWrap{
-    margin: 4em 2em;
+    margin: 5% 5%;
+    width: 90%;
 }
 iframe, object, embed {
     max-width: 100%;
@@ -432,71 +470,172 @@ iframe, object, embed {
 footer{
     bottom: 0;
     width: 100%;
-    background-color: #420063;
-    color: white;
+    min-height: 14em;
+    background-color: #ffdf61;
+    color: black;
     font-size: 1.5em;
 }
-#personer{
-    padding: 1em;
-}
-#personer li{
-    display: inline;
-    margin: 0 2em;
-}
-ul#sitemapIndex{
-    display: inline-block;
-    margin: 2em;
-}
-ul#sitemapProblem{
-    display: inline-block;
-    margin: 2em;
-}
-.sitemapFooter li:first-child{
-    text-decoration: underline;
-}
-@media screen and (max-width: 1240px){
-    .sitater h2{
-        margin: 3em 1em;
-    }
-}
-@media screen and (max-width: 1000px){
-    .sitater h2{
-        margin: 2em 1em;
-    }
-}
-@media screen and (max-width: 1000px){
-    .sitater h2{
-        margin: 1.5em 1em;
-    }
+.personerContainer{
+    display: block;
+    float: right;
+    width: 30%;
 }
 
-@media screen and (max-width: 805px){
-    main {
+#personer{
+    word-wrap: none;
+    width: 20%;
+}
+
+#personer>li>p{
+    font-size: 0.65em;  /*navneliste personer navn personer font size*/
+    margin-top: 1px;
+}
+#personer li{
+    margin: 0 0em;
+    margin-left: 0;
+}
+
+ul#personer{
+    display: inline;
+    /*margin: 2em;*/
+}
+     /*   border-right: 2px solid white; */
+
+ul#sitemapIndex{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+ul#sitemapProblem{
+    display: inline-block;
+    width: 20%;
+margin-left: 5%;
+
+
+}
+
+strong{
+    color: black;
+    margin: 0;
+}
+.footerNavigation>ul>li{
+    width: 30%;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+   
+}
+
+
+
+#sitemapProblem>li{
+    text-decoration: none;
+
+}
+
+
+.sitemapFooter li:first-child{
+    text-decoration: none;
+}
+@media screen and (max-width: 1240px){
+    .sitater h1{
+        margin: 1.8em 1em;
     }
+}
+@media screen and (max-width: 1000px){
+    .sitater h1{
+        margin: 1.8em 1em;
+    }
+
+}
+
+
+#sitemapIndex{
+    width: 20%;
+    margin-right: 6%;
+}
+#sitemapProblem{
+    width: 26%;
+}
+.survey{
+    margin-top: 2em;
+}
+.survey>img{
+    float: right;
+}
+@media screen and (max-width: 1050px){
+
+    ul#sitemapIndex{
+        display: inline-block;
+    margin-left: 15%;
+    width: 30%;
+    margin-top: 0;
+    
+    }
+    
+
+    ul#sitemapProblem{
+        width: 30%;
+        
+    }
+ 
+    footer>nav>ul{
+        margin-left: 10em;
+    }
+  
+
+    .personerContainer>ul>li>p{
+
+    
+    }
+    .personerContainer>ul{
+        display: inline-block;
+    }
+    .personerContainer{
+        text-align: center;
+        margin-top: 2em;
+       width: 100%;
+        float: none;
+    }
+
     .homeWrapper{
         display: block;
     }
     .sitater{
         background-color: #FFF4FF;
     }
+ 
+
     .homeVideo{
+       
+        float: none;
+        display: inline-block;
+        white-space: normal;
+        font-size: 20px;
+        min-height: 100vh;
         background-color: #FFECE0;
     }
     .videoWrap{
-        margin: 4em 2em;
+        text-align: center;
+    }
+    .videoWrap>iframe{
+        margin: 0 auto;
     }
     .sitater, .homeVideo{
         width: 100%;
         min-height: 50vh;
         display: block;
     }
-    .sitater h2{
+    .sitater h1{
         margin: 1em;
     }
 
 }
 
-
+/*--------*/
 @media (max-width: 580px) {
     .li-skipLink {
         -webkit-box-flex: 0.2;
@@ -520,7 +659,7 @@ ul#sitemapProblem{
 
     #personer>li{
         margin: 0;
-        width: 33%;
+
     }
 
     .problem {
@@ -546,4 +685,21 @@ ul#sitemapProblem{
         width: 60%;
         margin-left: 0;
     }
+}
+
+/*--------*/
+@media (max-width: 300px) {
+#header {
+text-align: center;
+
+    min-height: 18em;
+}
+#txtListe{
+    
+    float: none;
+}
+}
+.sitemapFooter>li{
+    margin-top: 10px !important; 
+
 }
