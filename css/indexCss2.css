@@ -146,8 +146,26 @@ a.skipLink:hover {
     position: absolute;
     z-index: 1;
     right: 0;
-    background-color: white;
-    padding: 0 2px;
+    background-color: #FFEDFF;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.textSizeValg:hover {
+    border: 1px solid black;
+}
+
+.textSizeValg:nth-child(odd){
+    background-color: #EEDCEE;
+}
+
+#size1 {
+    font-size: 1em;
+}#size2 {
+    font-size: 1.5em;
+}#size3 {
+    font-size: 2em;
 }
 
 #textSize:hover #textSizeDrop {
