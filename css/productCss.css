@@ -14,6 +14,7 @@ body {
     margin: 1em auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 .title {
@@ -27,13 +28,25 @@ body {
 
 }
 
-
-
 .slideImages {
     display: block;
     margin: 1em auto;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.number {
+    position: absolute;
+    margin:1em 0 0 .8em ;
+}
+
+.table {
+    margin-left: 1.5em;
+    line-height: 1.4em;
+}
+
+.delTable {
+    margin-left: 1.5em;
 }
 
 /* Tablet */
@@ -67,7 +80,10 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-
+    .tablecontent {
+        margin-left: 5%;
+        width: 30%;
+    }
 }
 
 /* Computer */
@@ -91,5 +107,11 @@ body {
 
     .slideImages  {
         width: 40%;
+    }
+
+    .tablecontent {
+        position: absolute;
+        width: 14%;
+        margin-left: 1%;
     }
 }
