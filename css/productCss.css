@@ -76,6 +76,13 @@ body {
 .table {
     margin-left: 1.5em;
     line-height: 1.4em;
+    
+}
+
+.table>li>a {
+    word-break: normal;
+   hyphens: auto;
+    
 }
 
 .delTable {

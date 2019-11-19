@@ -39,3 +39,22 @@ function endreTextSize(n) {
     localStorage.setItem("textSize", "x-large");
     }
 }
+
+
+//display: none;
+//visibility: hidden;
+//var el = document.getElementById('#foo');
+//el[i].className += ' my-class'; //
+
+
+function codeAddress() {
+    document.getElementById("textSizeNoJS").style.display = "none";
+    document.getElementById("textSizeNoJS").style.visibility = "hidden";
+
+
+    document.getElementById("textSize").style.display = "block";
+    document.getElementById("textSize").style.visibility = "visible";
+
+
+}
+window.onload = codeAddress;
