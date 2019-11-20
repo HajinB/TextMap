@@ -150,27 +150,7 @@ a.skipLink:hover {
     font-size: 1.3em;
 }
 
-.textSize {
-    /*grid-column: 2;*/
-    width: 0.333em;
-    border-right: 1px solid black;
-    /* box-shadow: 0 3px 10px 1px black; */
-    margin-left: 20vw;
-    display: inline-block;
-    text-align: center;
-    margin-right: 0;
-    float: left;
-    -webkit-box-pack: right;
-    -ms-flex-pack: right;
-    justify-content: right;
-    -webkit-box-flex: 0.5;
-    -ms-flex: 0.5;
-    flex: 0.5;
-    position: relative;
-    font-size: 1.3em;
-}
-
-#textSizeDrop {
+.textSizeDrop {
     display: none;
     position: absolute;
     z-index: 1;
@@ -192,15 +172,21 @@ figcpation{
 }
 
 
-#size1 {
+#size1, #size1NoJs {
     font-size: 1em;
-}#size2 {
+    background-color: #DDCBDD;
+}#size2, #size2NoJs {
     font-size: 1.5em;
-}#size3 {
+}#size3, #size3NoJs {
     font-size: 2em;
 }
 
-.textSize:hover #textSizeDrop {
+#size1NoJs > a, #size2NoJs > a, #size3NoJs > a {
+    text-decoration: none;
+    color: black;
+}
+
+.textSize:hover .textSizeDrop {
     display: block;
 }
 

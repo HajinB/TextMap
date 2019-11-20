@@ -3,23 +3,32 @@ var htmlCss = document.getElementsByTagName("html");
 var valg1 = document.getElementById("size1");
 var valg2 = document.getElementById("size2");
 var valg3 = document.getElementById("size3");
-
-if(textSize == null){
-    localStorage.setItem("textSize", "medium");
-    valg1.style.backgroundColor = "#DDCBDD";
-}
-else if(textSize == "medium"){
-    htmlCss[0].style.fontSize = "medium";
-    valg1.style.backgroundColor = "#DDCBDD";
-}
-else if(textSize == "large"){
-    htmlCss[0].style.fontSize = "large";
-    valg2.style.backgroundColor = "#DDCBDD";
-}
-else if(textSize == "x-large"){
-   htmlCss[0].style.fontSize = "x-large";
-    valg3.style.backgroundColor = "#DDCBDD";
-}
+function sjekkSize(){
+    if(textSize == null){
+        localStorage.setItem("textSize", "medium");
+        valg1.style.backgroundColor = "#DDCBDD";
+        valg2.style.backgroundColor = "#FFEDFF";
+        valg3.style.backgroundColor = "#FFEDFF";
+    }
+    else if(textSize == "medium"){
+        htmlCss[0].style.fontSize = "medium";
+        valg1.style.backgroundColor = "#DDCBDD";
+        valg2.style.backgroundColor = "#FFEDFF";
+        valg3.style.backgroundColor = "#FFEDFF";
+    }
+    else if(textSize == "large"){
+        htmlCss[0].style.fontSize = "large";
+        valg1.style.backgroundColor = "#FFEDFF";
+        valg2.style.backgroundColor = "#DDCBDD";
+        valg3.style.backgroundColor = "#FFEDFF";
+    }
+    else if(textSize == "x-large"){
+        htmlCss[0].style.fontSize = "x-large";
+        valg1.style.backgroundColor = "#FFEDFF";
+        valg2.style.backgroundColor = "#FFEDFF";
+        valg3.style.backgroundColor = "#DDCBDD";
+    }
+}sjekkSize();
 
 var evtTextSize = document.querySelectorAll(".textSizeValg");
 for(var i = 0; i < evtTextSize.length; i++){
