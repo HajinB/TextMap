@@ -191,9 +191,6 @@ figcpation{
     margin: 0 !important;
 }
 
-.textSizeValg:nth-child(odd){
-    background-color: #EEDCEE;
-}
 
 #size1 {
     font-size: 1em;

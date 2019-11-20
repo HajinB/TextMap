@@ -44,10 +44,6 @@ body {
     border: 1px solid black;
 }
 
-.textSizeValg:nth-child(odd){
-    background-color: #EEDCEE;
-}
-
 #size1 {
     font-size: 1em;
 }#size2 {
@@ -81,6 +77,8 @@ body {
 
 .table>li>a {
     word-break: normal;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
    hyphens: auto;
     
 }
