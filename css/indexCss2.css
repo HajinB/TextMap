@@ -5,20 +5,27 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.0000000002em;
+    letter-spacing: 0.002em;
 }
 
-:-webkit-any(article, aside, nav, section) h1 {
-    font-size: 1.5em;
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.6;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
-h1 {
-    line-height: 1.6;
+*:focus{
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+    transition: 90ms;
+    -webkit-transition: 90ms;
+    -moz-transition: 90ms;
+    -ms-transition: 90ms;
+    -o-transition: 90ms;
 }
-
-
 /*
 FARGEVELGER!!
     Mørkeste header footer:
@@ -279,6 +286,7 @@ figcpation {
 }
 
 .logotext {
+    
     position: absolute;
     display: block;
     float: left;
@@ -286,6 +294,7 @@ figcpation {
     display: block;
     top: 100px;
     margin-left: 0.9em;
+    display: none;
     /* /* hvis tekst størrelsen er stor - endre denne til em . . . . */
 }
 
@@ -307,6 +316,11 @@ figcpation {
     transform: translateY(-50%);
     float: right;
 }
+
+.landmarkControls{
+    display: none;
+}
+
 
 #hamburger {
     display: none;
@@ -341,7 +355,9 @@ figcpation {
     height: 90px;
     position: absolute;
 }
-
+.externallinkLogo{
+    display: inline;
+}
 
 /* her er margin til home */
 
@@ -361,6 +377,7 @@ figcpation {
 a:focus {
     -webkit-box-shadow: 0 3px 10px 1px black;
     box-shadow: 0 3px 10px 1px black;
+
 }
 
 .controls:focus {

@@ -10,61 +10,60 @@
 </head>
 
 <body>
-    <nav tabindex="-1" class="controls" id="controls">
-
+    <nav aria-labelledby="landmarkControls" tabindex="-1" class="controls" id="controls">
+        <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
 
 
         <ul class="ul-controls">
-            <li class="li-skipLink">
-                <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
+         
+  <li class="li-skipLink">
+                <a  href="#Problem" class="skipLink" id="skipLink">Skip to main content
                 </a>
             </li>
 
-            <ul class="ul-controls">
                 <li class="li-skipLink">
-                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink2">Skip to table of contents
+                    <a  href="#tableOfContentsTitle" class="skipLink" id="skipLink2">Skip to table of contents
                     </a>
                 </li>
 
+            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                <a class="txtControls"><span aria-hidden="true" class="textSizeLogo"></span>Change Text
+                    Size
+                </a>
+                <ul class="textSizeDrop">
+                    <li class="textSizeValg" id="size1" data-valg="0">T 100%</li>
+                    <li class="textSizeValg" id="size2" data-valg="1">T 150%</li>
+                    <li class="textSizeValg" id="size3" data-valg="2">T 200%</li>
+                </ul>
+            </li>
 
-                <li class="textSize textSizeJS" id="textSize">
-                    <a class="txtControls" href="#k"><span aria-hidden="true" class="textSizeLogo"></span>Change Text
-                        Size </a>
-                    <ul id="textSizeDrop">
-                        <li class="textSizeValg" id="size1" data-valg="0">T 100%</li>
-                        <li class="textSizeValg" id="size2" data-valg="1">T 150%</li>
-                        <li class="textSizeValg" id="size3" data-valg="2">T 200%</li>
-                    </ul>
-                </li>
 
-                <li class="textSize" id="textSizeNoJS">
-                    <a class="txtControls">Change Text Size
-                    </a>
-                    <ul class="textSizeDrop">
-                        <li class="textSizeValg" id="size1NoJs"><a href="product.html">T 100%</a></li>
-                        <li class="textSizeValg" id="size2NoJs"><a href="product150.html">T 150%</a></li>
-                        <li class="textSizeValg" id="size3NoJs"><a href="product200.html">T 200%</a></li>
-                    </ul>
-                </li>
-                <li class="li-language">
-                    <a class="txtControls" href="#lang">
+            <li class="textSize" id="textSizeNoJS">
+                <a class="txtControls">Change Text
+                    Size
+                </a>
+                <ul class="textSizeDrop">
+                    <li class="textSizeValg" id="size1NoJs"><a href="index.html">T 100%</a></li>
+                    <li class="textSizeValg" id="size2NoJs"><a href="index150.html">T 150%</a></li>
+                    <li class="textSizeValg" id="size3NoJs"><a href="index200.html">T 200%</a></li>
+                </ul>
+            </li>
 
-                        Language
 
-                    </a>
-
-                </li>
-
-            </ul>
+            <li class="li-language">
+                <a class="txtControls" href="#lang">
+                    Language
+                </a>
+            </li>
+        </ul>
     </nav>
+    
     <nav id="header">
         <div id="headBoks">
 
-            <a class="logoHead" href="index.html"><span class="logotext"></span><img title="Home" id="aLogo" id="logo" src="media/74168387_572323330185919_8921402094682898432_n.png" alt="banner"></a>
-
-            <button aria-expanded="true" id="hamburger">
-                <span><img src="media/iconfinder_menu-alt_134216.png" alt="" role="menu">Menu</span>
-            </button>
+            <a class="logoHead" href="index.html">
+                <h2 class="logotext">MapText</h2>
+                <img title="Home" id="aLogo" id="logo" src="media/TextMapLogo.png" alt="banner"></a>
 
             <ul id="txtListe">
                 <li class="home"><a class="txtHead" href="index.html">Home</a></li>
@@ -78,21 +77,19 @@
         <div class="headerContainer">
 
             <figure class="headerFigure">
-                <img class="headerImage" src="media/banner imageFIN  222.png" alt="banner">
+                <img class="headerImage" src="media/banner imageFIN  222.png" alt="The MapText application displaying search mode">
             </figure>
 
             <section class="headertxt">
                 <h1 align="left">TextMap</h1>
 
-                <p>An app that stores information about the world around you in a map - making real world objects and text accessible</p>
+                <p>The app that stores information about the world around you , available by search or map - making real world objects and text accessible</p>
             </section>
         </div>
-
-
     </header>
 
     <section class="content tablecontent">
-        <h3 class="title">Table of contents</h3>
+        <h2 id="tableOfContentsTitle" class="title">Table of contents</h2>
         <ol class="table">
             <li><a href="#Problem">Problem</a></li>
             <ol type="i" class="delTable">
@@ -109,76 +106,77 @@
         </ol>
     </section>
 
-    <div class="content">
-        <h1 class="title" id="Problem">Problem</h1>
-        <p class="text">
-            Imagine being blind and hungry walking around in a city. How would you get the information to know what to eat? Most restaurants do not provide braille versions of their menus - and the usual practice is to let someone read the menu for you. What if you
-            could get the information directly on your phone or to your smart watch? One of the barriers faced by people in the real world is accessing information such as that would affect their lifes.
-        </p>
-        <section class="survey">
-            <h2 class="title" id="Survey">Survey</h2>
-            <img alt="" src="media/piechart.png">
+    <main>
+        <div class="content">
+            <h2 class="title" id="Problem" >Problem</h2>
             <p class="text">
-                Our survey shows shows that some people face barriers when walking around in the world. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero corrupti id totam ipsum harum hic illum, vel numquam! Quasi assumenda amet ipsa distinctio ea
-                ex quibusdam atque iusto aspernatur. Optio qui earum ab, voluptates, maxime perspiciatis sunt ipsam quisquam laboriosam laborum vitae? Porro enim commodi explicabo laborum animi, velit debitis dolore, maxime error architecto, voluptatum
-                consequuntur ipsum quaerat molestiae! Ea velit labore hic. Ab porro iste libero illum voluptas qui non excepturi esse praesentium obcaecati. Nesciunt totam, saepe fugit atque sapiente nam, voluptas minus harum tempora unde temporibus enim.
+                Imagine being blind and hungry walking around in a city. How would you get the information to know what to eat? Most restaurants do not provide braille versions of their menus - and the usual practice is to let someone read the menu for you. What if you
+                could get the information directly on your phone or to your smart watch? One of the barriers faced by people in the real world is accessing information such as that would affect their lifes.
             </p>
-        </section>
-    </div>
-
-    <div class="content">
-        <h1 class="title" id="Solution">Solution</h1>
-        <p class="text">An app that can access information in the real world around you. Designed for everyone that wants to get information about a nearby object or a place directly on their phone.
-
-            <section class="presentation">
-                <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
-                <div class="circle">
-                    <figure>
-                        <img class="presentationLogo" alt="" src="media/text.png">
-                </div>
-                <figcpation class="text">
-                    Transform real world text into accessible text on your phone.
-                </figcpation>
-                </figure>
+            <section class="survey">
+                <h3 class="title" id="Survey">Survey</h3>
+                <img alt="" src="media/piechart.png">
+                <p class="text">
+                    Our survey shows shows that some people face barriers when walking around in the world. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio libero corrupti id totam ipsum harum hic illum, vel numquam! Quasi assumenda amet ipsa distinctio ea
+                    ex quibusdam atque iusto aspernatur. Optio qui earum ab, voluptates, maxime perspiciatis sunt ipsam quisquam laboriosam laborum vitae? Porro enim commodi explicabo laborum animi, velit debitis dolore, maxime error architecto, voluptatum
+                    consequuntur ipsum quaerat molestiae! Ea velit labore hic. Ab porro iste libero illum voluptas qui non excepturi esse praesentium obcaecati. Nesciunt totam, saepe fugit atque sapiente nam, voluptas minus harum tempora unde temporibus enim.
+                </p>
             </section>
+        </div>
 
-            <section class="presentation">
-                <div class="circle">
-                    <figure>
-                        <img class="presentationLogo" alt="" src="media/text.png">
-                </div>
-                <figcpation class="text">
-                    Users can scan signs, menus or any other object so that repeated scanning is not needed.
-                </figcpation>
-                </figure>
-            </section>
+        <div class="content">
+            <h2 class="title" id="Solution">Solution</h2>
+            <p class="text">An app that can access information in the real world around you. Designed for everyone that wants to get information about a nearby object or a place directly on their phone.
 
-            <section class="presentation">
-                <div class="circle">
-                    <figure>
-                        <img class="presentationLogo" alt="" src="media/map.png">
-                </div>
-                <figcpation class="text">Find already scanned information about an object or place by searching
-                </figcpation>
-                </figure>
-            </section>
+                <section class="presentation">
+                <!--  <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div> -->
+                    <div class="circle">
+                        <figure>
+                            <img class="presentationLogo" alt="" src="media/text.png">
+                    </div>
+                    <figcpation class="text">
+                        Transform real world text into accessible text on your phone.
+                    </figcpation>
+                    </figure>
+                </section>
 
-            <section class="presentation">
-                <div class="circle">
-                    <figure>
-                        <img class="presentationLogo" alt="" src="media/notification_8.png">
-                </div>
-                <figcpation class="text">Recieve personalized notifications about the world around you decided by a filter
-                </figcpation>
-                </figure>
-            </section>
+                <section class="presentation">
+                    <div class="circle">
+                        <figure>
+                            <img class="presentationLogo" alt="" src="media/text.png">
+                    </div>
+                    <figcpation class="text">
+                        Users can scan signs, menus or any other object so that repeated scanning is not needed.
+                    </figcpation>
+                    </figure>
+                </section>
+
+                <section class="presentation">
+                    <div class="circle">
+                        <figure>
+                            <img class="presentationLogo" alt="" src="media/map.png">
+                    </div>
+                    <figcpation class="text">Find already scanned information about an object or place by searching
+                    </figcpation>
+                    </figure>
+                </section>
+
+                <section class="presentation">
+                    <div class="circle">
+                        <figure>
+                            <img class="presentationLogo" alt="" src="media/notification_8.png">
+                    </div>
+                    <figcpation class="text">Recieve personalized notifications about the world around you decided by a filter
+                    </figcpation>
+                    </figure>
+                </section>
 
 
-    </div>
+        </div>
 
     <div class="prototype">
 
-        <h1 class="title" id="Prototype">Prototype</h1>
+        <h2 class="title" id="Prototype">Prototype</h2>
 
         <div class="prototypeContent">
 
@@ -216,16 +214,28 @@
         </div>
 
     </div>
-    <footer>
-        <nav>
+</main>
+
+   
+<footer>
+        <nav aria-labelledby="landmarkFooter">
+            <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
             <ul class="sitemapFooter" id="sitemapIndex">
                 <li class="sitemapOverskrift siteMapItem">
                     <a href="index.html">
                         <Strong>Home</Strong>
                     </a>
                 </li>
+
                 <li class="siteMapItem"><a href="index.html#ideaSection">Idea</a></li>
+
                 <li class="siteMapItem"><a href="index.html#video">Video</a></li>
+
+                <li class="siteMapItem"><a href="#videoDownload">  
+                    Video link
+                    <img class="externallinkLogo" alt="opens in a new window" width="12" src="../media/externallink.png">
+                    </a>
+                </li>
             </ul>
 
             <ul class="sitemapFooter" id="sitemapProblem">
@@ -245,7 +255,7 @@
 
             <section class="personerContainer">
                 <ul class="sitemapFooter" id="personer">
-                    <h6>Laget av:</h6>
+                    <h2 class="Laget av">Laget av:</h2>
                     <li>
                         <p>Hajin Barzingi</p>
                     </li>

@@ -73,7 +73,29 @@ function endreTextSize(n) {
 //el[i].className += ' my-class'; //
 
 
-function codeAddress() {
+/*
+const topLevelLink = document.querySelectorAll('.txtControls');
+console.log(topLevelLink);
+
+topLevelLink.forEach(link => {
+    if (link.nextElementSibling) {
+      link.addEventListener('focus', function() {
+        this.parentElement.classList.add('focus')
+      })
+  
+      const subMenu = link.nextElementSibling
+      const subMenuLinks = subMenu.querySelectorAll('li')
+      const lastLinkIndex = subMenuLinks.length - 1
+      const lastLink = subMenuLinks[lastLinkIndex]
+  
+      lastLink.addEventListener('blur', function() {
+        link.parentElement.classList.remove('focus')
+      })
+    }
+  })
+*/
+
+function hvisJShide() {
     document.getElementById("textSizeNoJS").style.display = "none";
     document.getElementById("textSizeNoJS").style.visibility = "hidden";
 
@@ -83,4 +105,4 @@ function codeAddress() {
 
 
 }
-window.onload = codeAddress;
+window.onload = hvisJShide;
