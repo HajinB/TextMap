@@ -451,12 +451,12 @@ a:focus {
 
 .headerMain {
     height: 20em;
-    width: inherit;
+    width: 100%;
 }
 
 .headerContainer {
     height: inherit;
-    width: inherit;
+    width: 100%;
     text-align: center;
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
     background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
