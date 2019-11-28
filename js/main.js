@@ -126,13 +126,13 @@ window.onload = hvisJShide;
 
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+/* skru av og på classes */
+function textSizeDropDown() {
+    document.getElementById("textSizeDropDown").classList.toggle("show");
   }
   
-  // Close the dropdown if the user clicks outside of it
+  // Burde legge til escape key her - eller en egen function ??
+
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
