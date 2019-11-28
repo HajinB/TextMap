@@ -100,7 +100,7 @@ function hvisJShide() {
     document.getElementById("textSizeNoJS").style.visibility = "hidden";
 
 
-    document.getElementById("textSize").style.display = "block";
+    document.getElementById("textSize").style.display = "inline-block";
     document.getElementById("textSize").style.visibility = "visible";
 
 

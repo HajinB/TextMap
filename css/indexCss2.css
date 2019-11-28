@@ -362,18 +362,22 @@ figcpation {
     width: auto;
     height: 90px;
     position: absolute;
+    -webkit-transform: translateX(-23px);
     transform: translateX(-23px);
 }
 
 .presentationLogoPhone{
+-webkit-transform: translateX(-23px);
 transform: translateX(-23px);
 }
 
 .presentationLogoBell{
+    -webkit-transform: translateX(-36px);
     transform: translateX(-36px);
     }
 
 .presentationLogoMap{
+    -webkit-transform: translateX(-63px);
     transform: translateX(-63px);
         }
 
@@ -446,13 +450,14 @@ a:focus {
 
 .headerMain {
     height: 20em;
-    width: 100vw;
+    width: inherit;
 }
 
 .headerContainer {
     height: inherit;
-    width: 100vw;
+    width: inherit;
     text-align: center;
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
     background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
 }
 
@@ -473,7 +478,9 @@ a:focus {
 }
 
 .headerImage {
+    -webkit-box-shadow: 20px 0px 20px 0px rgb(255, 174, 61);
     box-shadow: 20px 0px 20px 0px rgb(255, 174, 61);
+    -webkit-box-shadow: 20px 0px 20px 0px rgba(209, 78, 103, 1);
     box-shadow: 20px 0px 20px 0px rgba(209, 78, 103, 1);
     height: inherit;
     min-height: 15em;
@@ -493,9 +500,8 @@ a:focus {
 .headertxt {
     font-size: 1.2em;
     text-align: left;
-    margin: 0 0;
     padding: 0 0;
-    margin: 0 10%;
+    margin: 0 0 0 5%;
     width: 30%;
     color: black;
     position: relative;
@@ -726,10 +732,12 @@ nav>ul>li>a {
         display: block;
         height: 50%;
         float: none;
+        -o-object-fit: cover;
         object-fit: cover;
         text-align: center;
         overflow: hidden;
         height: 20em;
+        background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
         background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
         margin-bottom: 8em;
     }
