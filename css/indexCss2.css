@@ -210,7 +210,9 @@ a.skipLink:hover {
     width: 100%;
     cursor: pointer;
 }
-
+.textSizeValg{
+    display: block;
+}
 
 
 .textSizeValg:hover {
