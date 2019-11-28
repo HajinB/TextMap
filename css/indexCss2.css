@@ -14,6 +14,16 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 *:focus{
     outline: -webkit-focus-ring-color auto 5px;
     outline-color: -webkit-focus-ring-color;
@@ -57,28 +67,41 @@ ul>li {
     border-bottom: 1px solid #717171;
 }
 
+.textsizeactive{
+    border-bottom: 1px solid #ffd79c;
+}
+
 .active {
     border-bottom: 1px solid #ffd79c;
-    color: #ffd79c;
     padding-bottom: 1px;
 }
 
 .li-skipLink {
+    position: absolute; /*denne absoluten fikser problemet med forskjellig UL CONTROLS på sidene.*/
+    width: 100%;
+}
+
+.skiplinkWrapper{
     -webkit-box-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.5;
+    position: relative;
 }
 
-.skipLink {
+.skipLink { /*anchor*/
     position: absolute;
     top: -1000px;
     left: -1000px;
     height: 1px;
-    width: 32%;
+    width: 100%;
     text-align: left;
     overflow: hidden;
     z-index: 999;
     background: white;
+}
+
+#skipLink2{
+    z-index: 998;
 }
 
 a.skipLink:active,
@@ -88,14 +111,16 @@ a.skipLink:hover {
     top: 0;
     width: auto;
     height: auto;
+    width: 100%;
     overflow: visible;
+    width: inherit;
 }
 
 .ul-controls {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    float: left;
+    display: flex;    /*SKRU MEG*/
+     float: right; 
     text-align: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -149,22 +174,30 @@ a.skipLink:hover {
 
 .textSize {
     /*grid-column: 2;*/
-    width: 0.333em;
+   /* width: 0.333em; */
     border-right: 1px solid black;
     /* box-shadow: 0 3px 10px 1px black; */
-    margin-left: 20vw;
+    margin-left: 30vw;
     display: inline-block;
     text-align: center;
     margin-right: 0;
     float: left;
+    padding-right: 0.4em;
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
     -webkit-box-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.5;
-    position: relative;
-    font-size: 1.3em;
+    font-size: 1.3em; 
+}
+
+@supports ((display: -webkit-flex) or
+          (display: -moz-flex) or
+          (display: flex)) and (-webkit-appearance: caret) {
+            .textSize {
+            margin-left: 0vw;
+            }
 }
 
 .textSizeDrop {
@@ -177,6 +210,8 @@ a.skipLink:hover {
     width: 100%;
     cursor: pointer;
 }
+
+
 
 .textSizeValg:hover {
     border: 1px solid black;
@@ -873,11 +908,22 @@ nav>ul>li>a {
 /*--------*/
 
 @media screen and (max-width: 620px) {
-    .li-skipLink {
-        -webkit-box-flex: 0.2;
-        -ms-flex: 0.2;
-        flex: 0.2;
+    .textSize {
+        /*grid-column: 2;*/
+        
+        border-right: 1px solid black;
+        /* box-shadow: 0 3px 10px 1px black; */
+        
+        -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+        flex: 0.6;
     }
+
+   /* .li-skipLink {
+        -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+        flex: 0.4;
+    } */
     footer {
         font-size: 1.2em;
     }
@@ -935,3 +981,5 @@ nav>ul>li>a {
 .sitemapFooter>li {
     margin-top: 10px !important;
 }
+
+.show {display: block;}

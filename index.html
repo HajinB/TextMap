@@ -13,16 +13,20 @@
     <nav aria-labelledby="landmarkControls" class="controls" id="controls">
         <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
         <ul class="ul-controls">
-            <li class="li-skipLink">
-                <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to content
-                </a>
-            </li>
+            <div class="skiplinkWrapper">
+                <li class="li-skipLink">
+                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
+                    </a>
+                </li>
+            </div>
 
-            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
-                <a class="txtControls">Change Text
+            <li aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                <button class="dropbtn" onclick="myFunction()" aria-expanded="false"> 
+                    <a class="txtControls">Change Text
                     Size
-                </a>
-                <ul class="textSizeDrop">
+                    </a>
+                </button>
+                <ul id="myDropdown" class="textSizeDrop dropdown-content">
                     <li class="textSizeValg" id="size1" data-valg="0">T 100%</li>
                     <li class="textSizeValg" id="size2" data-valg="1">T 150%</li>
                     <li class="textSizeValg" id="size3" data-valg="2">T 200%</li>
@@ -31,14 +35,9 @@
 
 
             <li class="textSize" id="textSizeNoJS">
-                <a class="txtControls">Change Text
+                <a href="textsize.html" class="txtControls">Change Text
                     Size
                 </a>
-                <ul class="textSizeDrop">
-                    <li class="textSizeValg" id="size1NoJs"><a href="index.html">T 100%</a></li>
-                    <li class="textSizeValg" id="size2NoJs"><a href="index150.html">T 150%</a></li>
-                    <li class="textSizeValg" id="size3NoJs"><a href="index200.html">T 200%</a></li>
-                </ul>
             </li>
 
 
@@ -53,9 +52,10 @@
     <nav id="header">
         <div id="headBoks">
 
-             <a class="logoHead" href="index.html">
+            <a class="logoHead" href="index.html">
                 <p class="logotext">MapText</p>
-                <img title="Home" id="aLogo" id="logo" src="media/TextMapLogo.png" alt="banner"></a>
+                <img title="Home" id="aLogo" id="logo" src="media/TextMapLogo.png" alt="banner">
+            </a>
 
             <ul id="txtListe">
                 <li class="home">
@@ -70,11 +70,12 @@
     </nav>
 
     <div role="header" class="banner">
-        <img width="200" height="200" class="bannerIMG" src="media/banner2.jpg" alt="Application displaying map and search functions"/>
+        <img width="200" height="200" class="bannerIMG" src="media/banner2.jpg"
+            alt="Application displaying map and search functions" />
     </div>
 
     <main class="content">
-        <section  class="homeWrapper" id="ideaSection">
+        <section class="homeWrapper" id="ideaSection">
 
 
             <div class="sitater">
@@ -88,12 +89,15 @@
             <div class="homeVideo">
                 <div class="videoWrap" role="" aria-labelledby="landmarkVideo">
                     <h2 id="landmarkVideo" class="landmarkControls">TextMap Video</h2>
-                    <iframe id="video" width="560" title="MapText video" height="315" src="https://www.youtube-nocookie.com/embed/aKCMtJGGWlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><a href="#download video">download video</a></iframe>
+                    <iframe id="video" width="560" title="MapText video" height="315"
+                        src="https://www.youtube-nocookie.com/embed/aKCMtJGGWlU" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen><a href="#download video">download video</a></iframe>
                 </div>
             </div>
         </section>
 
-       
+
 
     </main>
 
@@ -111,16 +115,19 @@
 
                 <li class="siteMapItem"><a href="index.html#video">Video</a></li>
 
-                <li class="siteMapItem"><a href="#videoDownload">  
+                <li class="siteMapItem"><a href="#videoDownload">
                         Video link
-                        <img class="externallinkLogo" alt="opens in a new window" width="12" src="media/externallink.png">
-                        </a>
-                    </li>
+                        <img class="externallinkLogo" alt="opens in a new window" width="12"
+                            src="media/externallink.png">
+                    </a>
+                </li>
             </ul>
 
             <ul class="sitemapFooter" id="sitemapProblem">
                 <li class="siteMapItem sitemapOverskrift">
-                    <a href="product.html"><h3>Product</h3></a>
+                    <a href="product.html">
+                        <h3>Product</h3>
+                    </a>
                 </li>
 
                 <li class="siteMapItem">
