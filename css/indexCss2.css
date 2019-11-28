@@ -846,7 +846,7 @@ nav>ul>li>a {
 
 @media (max-width: 680px) {
     .headerMain {
-        margin-bottom: 12em;
+        margin-bottom: 6.5em;
     }
     footer {
         height: 30em;
