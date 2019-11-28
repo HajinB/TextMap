@@ -122,16 +122,28 @@ window.onload = hvisJShide;
 
 
 
-
-
-
-
 /* skru av og på classes */
 function textSizeDropDown() {
     document.getElementById("textSizeDropDown").classList.toggle("show");
+    var x = document.getElementById("dropbtn").getAttribute("aria-expanded"); 
+    if (x == "true") 
+    {
+    x = "false"
+    } else {
+    x = "true"
+    }
+    document.getElementById("dropbtn").setAttribute("aria-expanded", x);
+    document.getElementById("textSize").setAttribute("aria-expanded", x);
   }
   
   // Burde legge til escape key her - eller en egen function ??
+  document.getElementById('textSizeDropDown').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById("textSizeDropDown").setAttribute('aria-expanded', "true");
+    var target = document.getElementById('size1');
+    target.setAttribute('tabindex', '-1');
+    target.focus();
+  });
 
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
