@@ -444,30 +444,32 @@ a:focus {
     border-radius: 4%;
 }
 
+.imgFlag {
+    width: 1em;
+}
+
 #cookiesBox {
     position: fixed;
     display: none;
     float: left;
-    width: 100vw;
+    width: 100%;
     color: white;
     font-size: 1em;
     bottom: 0;
+    opacity: 0.9;   
     background-color: #303030;
-}
-
-#cookiesTxt {
-    width: 80%;
 }
 
 #btnAccept {
     max-height: 70px;
     margin: 0 auto;
-    width: 15vw;
+    width: 120px;
     font-size: 1.1em;
     background-color: black;
     color: white;
     text-decoration: none;
     border: none;
+    border-radius: 5px;
 }
 
 #btnAccept:hover {
