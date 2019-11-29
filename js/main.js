@@ -136,7 +136,21 @@ function textSizeDropDown() {
     document.getElementById("textSize").setAttribute("aria-expanded", x);
   }
   
-  // Burde legge til escape key her - eller en egen function ??
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    var dropdowns = document.getElementById("textSizeDropDown");
+    if (evt.keyCode == 27) {
+       
+       /* if (dropdowns.classList.contains('show')) {
+          dropdowns.classList.remove('show');
+        } */
+        alert('Esc key pressed.');
+    }
+};
+
+
+
+  // PRØVER Å FJERNE FOKUS NÅR DEN TABBES VIDERE Burde legge til escape key her - eller en egen function ??
   document.getElementById('textSizeDropDown').addEventListener('click', function(e) {
     e.preventDefault();
     document.getElementById("textSizeDropDown").setAttribute('aria-expanded', "true");
@@ -144,6 +158,9 @@ function textSizeDropDown() {
     target.setAttribute('tabindex', '-1');
     target.focus();
   });
+
+
+
 
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

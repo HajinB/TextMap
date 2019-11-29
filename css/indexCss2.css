@@ -115,11 +115,14 @@ a.skipLink:hover {
     overflow: visible;
     width: inherit;
 }
+.controls{
+    height: 4em;
+}
 
 .ul-controls {
-    display: -webkit-box;
+   /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    /*SKRU MEG*/
+    display: flex;  */   /*SKRU MEG*/
      float: right; 
     text-align: center;
     -webkit-box-pack: justify;
@@ -128,6 +131,16 @@ a.skipLink:hover {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+  height: 85%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
 }
 
 .controls {
@@ -191,12 +204,28 @@ a.skipLink:hover {
     flex: 0.5;
     font-size: 1.3em; 
 }
+.textSize {
+    margin-left: 30vw !important;
+  
+    }
+
+    .li-language{
+        margin-top: 0.8em;
+    }
 
 @supports ((display: -webkit-flex) or
           (display: -moz-flex) or
-          (display: flex)) and (-webkit-appearance: caret) {
+          (display: flex)){
             .textSize {
-            margin-left: 0vw;
+            margin-left: 0vw; 
+            }
+            .li-skipLink {
+                /*denne absoluten fikser problemet med forskjellig UL CONTROLS på sidene.*/
+                width: 100%;
+            }
+            .li-language{
+                margin-top: 0em !important;
+                transform: translateY(-0.02em);
             }
 }
 
@@ -251,7 +280,7 @@ figcpation {
 }
 
 .textSize:hover .textSizeDrop {
-    display: block;
+   /* display: block; */
 }
 
 .langImg {
@@ -261,17 +290,23 @@ figcpation {
 }
 
 .li-language {
+    display: inline;
     float: right;
     margin-right: 2vw;
     -webkit-box-flex: 0.3;
     -ms-flex: 0.3;
     flex: 0.3;
     width: 33%;
-    display: block;
+    vertical-align: middle;
     color: white;
     text-align: center;
     font-size: 1.3em;
     margin-left: 1vw;
+    
+   /* top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    float: right;
     /* box-shadow: 0 3px 10px 1px black; */
 }
 

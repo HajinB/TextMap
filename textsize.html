@@ -20,16 +20,16 @@
                     </a>
                 </li>
             </div>
-            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
-                <button> 
-                    <a class="txtControls">Change Text
+            
+            <li  aria-expanded="false" class="textSize textSizeJS dropbtn" id="textSize">
+                <button id="dropbtn" class="dropbtn txtControls" onclick="textSizeDropDown()" aria-expanded="false"> 
+                    Change Text
                     Size
-                    </a>
                 </button>
-                <ul class="textSizeDrop">
-                    <li class="textSizeValg" id="size1" data-valg="0">T 100%</li>
-                    <li class="textSizeValg" id="size2" data-valg="1">T 150%</li>
-                    <li class="textSizeValg" id="size3" data-valg="2">T 200%</li>
+                <ul id="textSizeDropDown" class="textSizeDrop dropdown-content">
+                    <button tabindex="0" class="textSizeValg" id="size1" data-valg="0">T 100%</button>
+                    <button tabindex="0" class="textSizeValg" id="size2" data-valg="1">T 150%</button>
+                    <button tabindex="0" class="textSizeValg" id="size3" data-valg="2">T 200%</button>
                 </ul>
             </li>
 
