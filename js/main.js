@@ -5,6 +5,7 @@ var textSize = document.getElementById("textSize");
 var dropBtn = document.getElementById("dropBtn");
 var btnAccept = document.getElementById("btnAccept");
 var cookiesBox = document.getElementById("cookiesBox");
+var aapenTextSize = Boolean(false);
 var valg1 = document.getElementById("size1");
 var valg2 = document.getElementById("size2");
 var valg3 = document.getElementById("size3");
@@ -58,10 +59,21 @@ for(var i = 0; i < evtTextSize.length; i++){
             var valgIndeks = textValg.getAttribute("data-valg");
             endreTextSize(valgIndeks);
             dropBtn.blur();
+            aapenTextSize = Boolean(false);
             textSizeDrop.style.display = "none";
+            dropBtn.setAttribute('aria-expanded', false);
         }
     })
 }
+
+document.onkeydown = function(event) {
+    event = event || window.event;
+    if (event.keyCode == 27 && aapenTextSize) {
+        aapenTextSize = Boolean(false);
+        textSizeDrop.style.display = "none";
+        dropBtn.setAttribute('aria-expanded', false);
+    }
+};
 
 function endreTextSize(n) {
     if(n == 0){
@@ -87,9 +99,16 @@ function endreTextSize(n) {
     }
 }
 
-dropBtn.onkeypress = function() {
-    if(event.keyCode == 13){
+dropBtn.onkeypress = function(event) {
+    if(event.keyCode == 13 && !aapenTextSize){
+        aapenTextSize = Boolean(true);
         textSizeDrop.style.display = "block";
+        dropBtn.setAttribute('aria-expanded', true);
+    }
+    else if(event.keyCode == 13 && aapenTextSize){
+        aapenTextSize = Boolean(false);
+        textSizeDrop.style.display = "none";
+        dropBtn.setAttribute('aria-expanded', false);
     }
 }
 
@@ -110,11 +129,15 @@ function sjekkCookies(){
 } sjekkCookies();
 
 textSize.onmouseover = function (){
+    aapenTextSize = Boolean(true);
     textSizeDrop.style.display = "block";
+    dropBtn.setAttribute('aria-expanded', true);
 }
 
 textSize.onmouseout = function (){
+    aapenTextSize = Boolean(false);
     textSizeDrop.style.display = "none";
+    dropBtn.setAttribute('aria-expanded', false);
 }
 
 //display: none;
@@ -154,8 +177,8 @@ function hvisJShide() {
     document.getElementById("textSize").style.visibility = "visible";
 
 
-}
-window.onload = hvisJShide;
+}hvisJShide();
+
 
 
 
