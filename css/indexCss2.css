@@ -118,9 +118,6 @@ a.skipLink:hover {
     width: inherit;
     z-index: 988;
 }
-.controls{
-    height: 4em;
-}
 
 .ul-controls {
    /* display: -webkit-box;
@@ -134,13 +131,11 @@ a.skipLink:hover {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-  height: 85%;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -webkit-box;
     display: flex; 
 
     -ms-flex-align: center;
-    -webkit-align-items: center;
     -webkit-box-align: center;
 
     align-items: center;
@@ -192,23 +187,24 @@ a.skipLink:hover {
 
 .textSize {
     /*grid-column: 2;*/
-   /* width: 0.333em; */
+    width: 0.333em;
     border-right: 1px solid black;
     /* box-shadow: 0 3px 10px 1px black; */
-    margin-left: 30vw;
+    margin-left: 20vw;
     display: inline-block;
     text-align: center;
     margin-right: 0;
     float: left;
-    padding-right: 0.4em;
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
     -webkit-box-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.5;
-    font-size: 1.3em; 
+    position: relative;  
+    font-size: 1.3em;
 }
+
 .textSize {
     margin-left: 30vw !important;
   
@@ -218,9 +214,8 @@ a.skipLink:hover {
         margin-top: 0.8em;
     }
 
-@supports ((display: -webkit-flex) or
-          (display: -moz-flex) or
-          (display: flex)){
+@supports ((display: -moz-flex) or
+          ((display: -webkit-box) or (display: flex))){
             .textSize {
             margin-left: 0vw; 
             }
@@ -230,6 +225,7 @@ a.skipLink:hover {
             }
             .li-language{
                 margin-top: 0em !important;
+                -webkit-transform: translateY(-0.02em);
                 transform: translateY(-0.02em);
             }
 }
@@ -239,15 +235,26 @@ a.skipLink:hover {
     position: absolute;
     z-index: 1;
     right: 0;
-    background-color: #FFEDFF;
+    background-color: white;
     padding: 0;
     width: 100%;
     cursor: pointer;
 }
-.textSizeValg{
-    display: block;
+
+#dropBtn {
+    border: none;
+    background-color: inherit;
+    height: 10px;
 }
 
+#dropBtn:hover {
+    cursor: pointer;
+}
+
+.textSizeValg{
+    border: none;
+    background-color: inherit;
+}
 
 .textSizeValg:hover {
     border: 1px solid black;
@@ -261,18 +268,17 @@ figcpation {
     margin: 0 !important;
 }
 
-#size1,
+#sizeValg1,
 #size1NoJs {
     font-size: 1em;
-    background-color: #DDCBDD;
 }
 
-#size2,
+#sizeValg2,
 #size2NoJs {
     font-size: 1.5em;
 }
 
-#size3,
+#sizeValg3,
 #size3NoJs {
     font-size: 2em;
 }
@@ -282,10 +288,6 @@ figcpation {
 #size3NoJs>a {
     text-decoration: none;
     color: black;
-}
-
-.textSize:hover .textSizeDrop {
-   /* display: block; */
 }
 
 .langImg {
@@ -519,6 +521,38 @@ a:focus {
     text-decoration: none;
     cursor: pointer;
     border-radius: 4%;
+}
+
+.imgFlag {
+    width: 1em;
+}
+
+#cookiesBox {
+    position: fixed;
+    display: none;
+    float: left;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    bottom: 0;
+    opacity: 0.9;   
+    background-color: #303030;
+}
+
+#btnAccept {
+    max-height: 70px;
+    margin: 0 auto;
+    width: 120px;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#btnAccept:hover {
+    cursor: pointer;
 }
 
 .headerMain {
@@ -967,6 +1001,8 @@ nav>ul>li>a {
     }
     
     #textSizeNoJS{
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         width: 20em;
       
@@ -1038,6 +1074,8 @@ nav>ul>li>a {
 .show {display: block;}
 
 #textSizeNoJS{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     width: 25%;
     margin-left: 10vw !important;
