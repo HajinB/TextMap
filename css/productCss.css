@@ -11,13 +11,26 @@ body {
 
 .content,
 .prototype {
-    background-color: white;
+    display: grid;
+    grid-gap: 1em;
+
+    background-color: #eeeeee;
     width: 90%;
     margin: 1em auto;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     margin-bottom: 2em;
     padding-bottom: 1em;
+}
+
+.content {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slides {
+    background-color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title {
@@ -95,6 +108,7 @@ body {
 
 
 
+
 /* Tablet */
 
 @media only screen and (min-width: 800px) {
@@ -131,6 +145,8 @@ body {
     .slideImages {
         width: 70%;
     }
+
+    
     .textSize,
     .li-language {
         font-size: 1.5em;
@@ -144,6 +160,10 @@ body {
         background-color: white;
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #sourcDiv {
+        grid-column: 1/3;
     }
     .tablecontent {
         margin-left: 5%;
@@ -168,6 +188,10 @@ body {
     .prototype {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1.5em;
+    }
+
+    #sourcDiv {
+        grid-column: 2/4;
     }
     .slideImages {
         width: 40%;
