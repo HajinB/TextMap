@@ -789,9 +789,6 @@ nav>ul>li>a {
     margin-top: 2em;
 }
 
-.survey>img {
-    float: right;
-}
 
 @media screen and (max-width: 1050px) {
     .headerMain {
