@@ -87,11 +87,18 @@
 
             <div class="homeVideo">
                 <div class="videoWrap" role="" aria-labelledby="landmarkVideo">
-                    <h2 id="landmarkVideo" class="landmarkControls">TextMap Video</h2>
-                    <iframe id="video" width="560" title="MapText video" height="315"
-                        src="https://www.youtube-nocookie.com/embed/aKCMtJGGWlU" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen><a href="#download video">download video</a></iframe>
+                    <h2 id="landmarkVideo" class="landmarkControls">Video of wh</h2>
+                    <video poster="media/piechart.png"
+                           width="400" height="300"
+                           preload
+                           controls>
+                        <source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+                        <track src="media/subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
+                        <track src="media/subtitles-no.vtt" kind="subtitles" srclang="no" label="Norsk">
+                        <p>A videodemonstration of uses for the TextMap app.
+                            Download the video here:
+                            Watch it at YouTube here (opens in a new window): </p>
+                    </video>
                 </div>
             </div>
         </section>
