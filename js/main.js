@@ -72,6 +72,7 @@ document.onkeydown = function(event) {
         aapenTextSize = Boolean(false);
         textSizeDrop.style.display = "none";
         dropBtn.setAttribute('aria-expanded', false);
+        dropBtn.focus();
     }
 };
 

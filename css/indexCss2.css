@@ -118,6 +118,10 @@ a.skipLink:hover {
     width: inherit;
     z-index: 988;
 }
+#textSize{
+    height: auto;
+}
+
 
 .ul-controls {
    /* display: -webkit-box;
@@ -134,7 +138,7 @@ a.skipLink:hover {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex; 
-
+    height: 4em;
     -ms-flex-align: center;
     -webkit-box-align: center;
 
@@ -244,7 +248,6 @@ a.skipLink:hover {
 #dropBtn {
     border: none;
     background-color: inherit;
-    height: 10px;
 }
 
 #dropBtn:hover {
@@ -949,10 +952,15 @@ nav>ul>li>a {
 
 @media (max-width: 680px) {
     .skiplinkWrapper{
-        -webkit-box-flex: 2.5;
-        -ms-flex: 2.5;
-        flex: 2.5;
+        -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+        flex: 0.5;
        
+    }
+    .li-language{
+        -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+        flex: 0.6; 
     }
     .headerMain {
         margin-bottom: 6.5em;
