@@ -2,6 +2,8 @@ var textSize = localStorage.getItem("textSize");
 var htmlCss = document.getElementsByTagName("html");
 var textSizeDrop = document.getElementsByClassName("textSizeDrop")[0];
 var dropBtn = document.getElementById("dropBtn");
+var btnAccept = document.getElementById("btnAccept");
+var cookiesBox = document.getElementById("cookiesBox");
 var valg1 = document.getElementById("size1");
 var valg2 = document.getElementById("size2");
 var valg3 = document.getElementById("size3");
@@ -30,7 +32,7 @@ function sjekkSize(){
         valg2.style.backgroundColor = "#FFEDFF";
         valg3.style.backgroundColor = "#DDCBDD";
     }
-}sjekkSize();
+}
 
 var evtTextSize = document.querySelectorAll(".textSizeValg");
 for(var i = 0; i < evtTextSize.length; i++){
@@ -89,6 +91,22 @@ dropBtn.onkeypress = function() {
         textSizeDrop.style.display = "block";
     }
 }
+
+btnAccept.onclick = function(){
+    cookiesBox.style.display = "none";
+    localStorage.setItem("cookies", "ja");
+}
+
+function sjekkCookies(){
+    var cookies = localStorage.getItem("cookies");
+    if(cookies == "ja"){
+        cookiesBox.style.display = "none";
+        sjekkSize();
+    }
+    else{
+        cookiesBox.style.display = "block";
+    }
+} sjekkCookies();
 
 //display: none;
 //visibility: hidden;

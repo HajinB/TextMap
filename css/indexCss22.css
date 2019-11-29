@@ -444,6 +444,36 @@ a:focus {
     border-radius: 4%;
 }
 
+#cookiesBox {
+    position: fixed;
+    display: none;
+    float: left;
+    width: 100vw;
+    color: white;
+    font-size: 1em;
+    bottom: 0;
+    background-color: #303030;
+}
+
+#cookiesTxt {
+    width: 80%;
+}
+
+#btnAccept {
+    max-height: 70px;
+    margin: 0 auto;
+    width: 15vw;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+#btnAccept:hover {
+    cursor: pointer;
+}
+
 .headerMain {
     height: 20em;
     width: 100%;
