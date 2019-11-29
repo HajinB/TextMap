@@ -77,8 +77,8 @@ ul>li {
 }
 
 .li-skipLink {
-    position: absolute; /*denne absoluten fikser problemet med forskjellig UL CONTROLS på sidene.*/
-    width: auto;
+     /*denne absoluten fikser problemet med forskjellig UL CONTROLS på sidene.*/
+    width: 3em;
 }
 
 .skiplinkWrapper{
@@ -86,8 +86,8 @@ ul>li {
     -ms-flex: 0.5;
     flex: 0.5;
     position: relative;
-    width: 30vw;
-    height: auto;
+   width: 100%;
+    height: 100%;
 }
 
 .skipLink { /*anchor*/
@@ -187,6 +187,8 @@ a.skipLink:hover {
     display: none;
     visibility: hidden;
 }
+
+
 
 .textSize {
     /*grid-column: 2;*/
@@ -954,6 +956,7 @@ nav>ul>li>a {
 /*--------*/
 
 @media screen and (max-width: 620px) {
+  
     .textSize {
         /*grid-column: 2;*/
         
@@ -963,8 +966,15 @@ nav>ul>li>a {
         -webkit-box-flex: 0.8;
         -ms-flex: 0.8;
         flex: 0.8;
+       
     }
-
+    
+    #textSizeNoJS{
+        flex: 1;
+        width: 20em;
+      
+        margin-left: 8vw !important;
+    }
    /* .li-skipLink {
         -webkit-box-flex: 0.4;
         -ms-flex: 0.4;
@@ -1029,3 +1039,9 @@ nav>ul>li>a {
 }
 
 .show {display: block;}
+
+#textSizeNoJS{
+    flex: 1;
+    width: 25%;
+    margin-left: 10vw !important;
+}
