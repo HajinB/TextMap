@@ -992,10 +992,6 @@ nav>ul>li>a {
     .presentation {
         width: 80%;
     }
-    #textSize{
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
 }
 
 
