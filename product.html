@@ -10,52 +10,43 @@
 </head>
 
 <body>
-    <nav aria-labelledby="landmarkControls" tabindex="-1" class="controls" id="controls">
+    <nav aria-labelledby="landmarkControls" class="controls" id="controls">
         <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
-
-
         <ul class="ul-controls">
-            <div class="skiplinkWrapper">
-                <li class="li-skipLink">
-                    <a href="#Problem" class="skipLink" id="skipLink">Skip to main content
+            <li class="skiplinkWrapper">
+                <div class="li-skipLink">
+                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
                     </a>
-                </li>
+                </div>
+            </li>
 
-                <li class="li-skipLink">
-                    <a href="#tableOfContentsTitle" class="skipLink" id="skipLink2">Skip to table of contents
-                    </a>
-                </li>
-           
-            </div>
-
-            <li  aria-expanded="false" class="textSize textSizeJS dropbtn" id="textSize">
-                <button id="dropbtn" class="dropbtn txtControls" onclick="textSizeDropDown()" aria-expanded="false"> 
-                    Change Text
+            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                <button id="dropBtn" class="txtControls" tabindex="0" aria-expanded="false">Change Text
                     Size
-                </button>
-                <ul id="textSizeDropDown" class="textSizeDrop dropdown-content">
-                    <button tabindex="0" class="textSizeValg" id="size1" data-valg="0">T 100%</button>
-                    <button tabindex="0" class="textSizeValg" id="size2" data-valg="1">T 150%</button>
-                    <button tabindex="0" class="textSizeValg" id="size3" data-valg="2">T 200%</button>
+                </button>   
+                <ul class="textSizeDrop">
+                    <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100% </button></li>
+                    <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150% </button></li>
+                    <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200% </button></li>
                 </ul>
             </li>
 
 
             <li class="textSize" id="textSizeNoJS">
-                    <a href="textsize.html" class="txtControls">Change Text
-                        Size
-                    </a>
-                </li>
+                <a href="textsize.html" class="txtControls">Change Text
+                    Size
+                </a>
+            </li>
 
 
             <li class="li-language">
                 <a class="txtControls" href="#lang">
-                    Language
+                    Norsk
                 </a>
+                <img alt="change language to norwegian" class="imgFlag" src="media/norwegian.png">
             </li>
         </ul>
     </nav>
-
     <nav id="header">
         <div id="headBoks">
 
@@ -336,7 +327,6 @@
                     </ul>
                 </p>
             </div>
->>>>>>> Stashed changes
         </div>
     </main>
 
@@ -408,6 +398,14 @@
         </nav>
     </footer>
     <a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan">Back to Top</span></a>
+    
+    <div id="cookiesBox">
+        <div id="cookiesTxt">
+            <a>We use cookies to offer you a better experience. By continuing to use this website, you consent to the use of cookies in accordance with our <a href="#">Cookie Policy</a></a>
+        </div>
+        <button id="btnAccept">Accept</button>
+    </div>
+
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
