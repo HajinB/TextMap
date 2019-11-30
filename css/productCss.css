@@ -94,19 +94,19 @@ body {
 
 @media only screen and (min-width: 800px) {
 
-    .prototypeContent > div {  /* First set the floats and widths - then check w supports - see comment under -    TRY TO COMMENT OUT WIDTH : AUTO IN THE CHECKER ALONG WITH DISPLAY: GRID TO SEE THE FALLBACK :D*/
+    .prototype > div {  /* First set the floats and widths - then check w supports - see comment under -    TRY TO COMMENT OUT WIDTH : AUTO IN THE CHECKER ALONG WITH DISPLAY: GRID TO SEE THE FALLBACK :D*/
         float: left;
         width: 46%;
-        margin: 2em 2%;
+        margin: auto;
       }
-      .prototypeContent::after {
+      .prototype::after {
         content: "";
         clear: both;
         display: table;
     }
       
       @supports (display: grid) {  /*grid checker - undoes the previous width: 46%*/
-        .prototypeContent > div {
+        .prototype > div {
           width: auto; 
         }
       }
