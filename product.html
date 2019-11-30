@@ -10,12 +10,14 @@
 </head>
 
 <body>
+
      <div id="cookiesBox">
         <div id="cookiesTxt">
             <a>We use cookies to offer you a better experience. By continuing to use this website, you consent to the use of cookies in accordance with our <a href="#">Cookie Policy</a></a>
         </div>
         <button id="btnAccept">Accept</button>
     </div>
+
     
     <nav aria-labelledby="landmarkControls" class="controls" id="controls">
         <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
@@ -35,17 +37,16 @@
            
             </div>
 
-            <li  aria-expanded="false" class="textSize textSizeJS dropbtn" id="textSize">
-                <button id="dropbtn" class="dropbtn txtControls" onclick="textSizeDropDown()" aria-expanded="false"> 
-                    Change Text
-                    Size
-                </button>
-                <ul id="textSizeDropDown" class="textSizeDrop dropdown-content">
-                    <button tabindex="0" class="textSizeValg" id="size1" data-valg="0">T 100%</button>
-                    <button tabindex="0" class="textSizeValg" id="size2" data-valg="1">T 150%</button>
-                    <button tabindex="0" class="textSizeValg" id="size3" data-valg="2">T 200%</button>
-                </ul>
-            </li>
+            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                    <button id="dropBtn" class="txtControls" tabindex="0" aria-expanded="false">Change Text
+                        Size
+                    </button>   
+                    <ul class="textSizeDrop">
+                        <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100% </button></li>
+                        <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150% </button></li>
+                        <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200% </button></li>
+                    </ul>
+                </li>
 
 
             <li class="textSize" id="textSizeNoJS">
@@ -66,9 +67,9 @@
     <nav id="header">
         <div id="headBoks">
 
-            <a class="logoHead" href="index.html">
-                <h2 class="logotext">MapText</h2>
-                <img title="Home" id="aLogo" id="logo" src="media/TextMapLogo.png" alt="banner">
+          <a class="logoHead" href="index.html">
+                
+                <img title="Home" id="aLogo" src="media/TextMapLogoFin.png" alt="banner">
             </a>
 
             <ul id="txtListe">

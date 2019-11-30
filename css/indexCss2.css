@@ -522,7 +522,7 @@ a:focus {
     width: 100%;
     color: white;
     font-size: 1em;
-    bottom: 0;
+    top: 0;
     opacity: 0.9;   
     background-color: #303030;
     z-index: 999;
