@@ -61,6 +61,12 @@ main {
 h1, h2{
     
 }
+#mainheader{
+
+text-align: center;
+
+}
+
 ul>li {
     list-style: none;
 }
@@ -596,8 +602,8 @@ a:focus {
     box-shadow: 20px 0px 20px 0px rgba(200,200,200);
     height: inherit;
     min-height: 15em;
-    border-radius: 7px;
-    -webkit-border-radius: 12px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
