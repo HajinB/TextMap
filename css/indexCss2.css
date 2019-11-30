@@ -848,7 +848,12 @@ nav>ul>li>a {
 .survey {
     margin-top: 2em;
 }
-
+@media screen and (max-width: 1180px) {
+    .headerImage {
+        min-height: 13em;
+      /*  min-height: 12em; */
+    }
+}
 
 @media screen and (max-width: 1050px) {
     .headerMain {

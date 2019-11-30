@@ -169,11 +169,16 @@ body {
     }
     .tablecontent {
         margin-left: 5%;
-        width: 30%;
+        width: 90%;
     }
 }
 
-
+.breakWord{
+    word-break: break-all;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
 /* Computer */
 
 @media only screen and (min-width: 1200px) {
