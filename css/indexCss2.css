@@ -525,6 +525,7 @@ a:focus {
     bottom: 0;
     opacity: 0.9;   
     background-color: #303030;
+    z-index: 999;
 }
 
 #btnAccept {
@@ -650,6 +651,8 @@ background-color: #550f78;
 .banner {
     height: 6px;
     width: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
+    background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
     text-align: center;
   
 }
@@ -1001,6 +1004,7 @@ margin-left: 0 !important;
     #txtListe {
         
         width: 60%;
+        -webkit-transform: translateX(20px);
         transform: translateX(20px);
        
     }
