@@ -340,9 +340,8 @@ figcpation {
 #aLogo {
     height: 100%;
     float: left;
-    min-height: 160px;
+    min-height: 140px;
     max-height: 160px;
-    margin-top: 1em;
 }
 
 #logo {
@@ -672,7 +671,6 @@ background-color: #550f78;
 
 .banner img {
     width: 20em;
-   
     height: auto;
     max-height: 400px;
     
@@ -969,7 +967,7 @@ nav>ul>li>a {
 
 
 @media (max-width: 680px) {
-    .skiplinkWrapper{flex:1;}
+    .skiplinkWrapper{-webkit-box-flex:1;-ms-flex:1;flex:1;}
 
 
     #textSize{
@@ -979,7 +977,7 @@ nav>ul>li>a {
         margin-left: 6em;
     }
     
-    .li-language{flex:1;}
+    .li-language{-webkit-box-flex:1;-ms-flex:1;flex:1;}
 
     .headerMain {
         margin-bottom: 6.5em;
@@ -1008,6 +1006,7 @@ nav>ul>li>a {
         width: 80%;
     }
     #textSize{
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
 }
@@ -1083,6 +1082,7 @@ nav>ul>li>a {
 }
 @media (max-width: 310px) {
 #textSize{
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 }
@@ -1096,6 +1096,7 @@ nav>ul>li>a {
     #txtListe {
         float: none;
         width: 35%;
+        -webkit-transform: translateY(-40px);
         transform: translateY(-40px);
     }
 }
