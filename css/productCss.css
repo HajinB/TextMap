@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-gap: 1em;
 
-    background-color: #eeeeee;
+    background-color: white;
     width: 90%;
     margin: 1em auto;
     
@@ -97,7 +97,6 @@ body {
     .prototype > div {  /* First set the floats and widths - then check w supports - see comment under -    TRY TO COMMENT OUT WIDTH : AUTO IN THE CHECKER ALONG WITH DISPLAY: GRID TO SEE THE FALLBACK :D*/
         float: left;
         width: 46%;
-        margin: auto;
       }
       .prototype::after {
         content: "";
