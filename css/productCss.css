@@ -43,35 +43,9 @@ body {
     line-height: 1.5em;
 }
 
-#textSizeDrop {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    background-color: #FFEDFF;
-    padding: 0;
-    width: 100%;
-    cursor: pointer;
-}
-
-.textSizeValg:hover {
-    border: 1px solid black;
-}
-
-#size1 {
-    font-size: 1em;
-}
-
-#size2 {
-    font-size: 1.5em;
-}
-
-#size3 {
-    font-size: 2em;
-}
-
-.textSize:hover #textSizeDrop {
-    display: block;
+.sourceList > li {
+    margin: 0 0 0.5em 1.6em;
+    list-style: initial;
 }
 
 .slideImages {
