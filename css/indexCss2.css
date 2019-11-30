@@ -583,16 +583,15 @@ a:focus {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
 .headerImage {
-    -webkit-box-shadow: 20px 0px 20px 0px rgb(255, 174, 61);
-    box-shadow: 20px 0px 20px 0px rgb(255, 174, 61);
-    -webkit-box-shadow: 20px 0px 20px 0px rgba(209, 78, 103, 1);
-    box-shadow: 20px 0px 20px 0px rgba(209, 78, 103, 1);
+    -webkit-box-shadow: 20px 0px 20px 0px rgb(200, 200, 200);
+    box-shadow: 20px 0px 20px 0px rgb(200, 200, 200);
+    -webkit-box-shadow: 20px 0px 20px 0px rgba(200,200,200);
+    box-shadow: 20px 0px 20px 0px rgba(200,200,200);
     height: inherit;
     min-height: 15em;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
@@ -602,6 +601,7 @@ a:focus {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    background-color: rgb(220,220,220);
 }
 
 .headertxt {
