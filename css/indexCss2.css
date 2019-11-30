@@ -138,7 +138,7 @@ a.skipLink:hover {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex; 
-    height: 4em;
+    height: 4.3em;
     -ms-flex-align: center;
     -webkit-box-align: center;
 
@@ -303,9 +303,9 @@ figcpation {
     display: inline;
     float: right;
     margin-right: 2vw;
-    -webkit-box-flex: 0.3;
-    -ms-flex: 0.3;
-    flex: 0.3;
+    -webkit-box-flex: 0.4;
+    -ms-flex: 0.4;
+    flex: 0.4;
     width: 33%;
     vertical-align: middle;
     color: white;
@@ -667,15 +667,15 @@ background-color: #550f78;
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
     background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
     text-align: center;
+  
 }
 
 .banner img {
-    width: auto;
+    width: 20em;
+   
     height: auto;
     max-height: 400px;
-}
-
-#bannerIMG {
+    
 }
 
 
@@ -705,6 +705,12 @@ background-color: #550f78;
     font-size: 2em;
     margin: 0.7em 0;
     vertical-align: middle;
+}
+
+video{
+    width: 100%;
+  height: auto;
+ 
 }
 
 .homeVideo {
@@ -958,18 +964,23 @@ nav>ul>li>a {
     }
 }
 
+
+
+
+
 @media (max-width: 680px) {
-    .skiplinkWrapper{
-        -webkit-box-flex: 0.5;
-        -ms-flex: 0.5;
-        flex: 0.5;
-       
+    .skiplinkWrapper{flex:1;}
+
+
+    #textSize{
+        flex:2;
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        margin-left: 6em;
     }
-    .li-language{
-        -webkit-box-flex: 0.6;
-        -ms-flex: 0.6;
-        flex: 0.6; 
-    }
+    
+    .li-language{flex:1;}
+
     .headerMain {
         margin-bottom: 6.5em;
     }
@@ -991,11 +1002,13 @@ nav>ul>li>a {
     }
 }
 
-@media screen and (max-width: 633px) {
-    #txtListe>li {
-    }
+@media screen and (max-width: 433px) {
+  
     .presentation {
         width: 80%;
+    }
+    #textSize{
+        transform: translateY(-10px);
     }
 }
 
@@ -1033,7 +1046,7 @@ nav>ul>li>a {
         font-size: 1.2em;
     }
     #txtListe {
-        float: center;
+       
         display: block;
         width: 55%;
         -webkit-transform: translateY(-50%);
@@ -1049,7 +1062,7 @@ nav>ul>li>a {
         margin: 0;
     }
     .problem {
-        float: center;
+      
         width: 45%;
         margin-left: 0;
     }
@@ -1068,8 +1081,11 @@ nav>ul>li>a {
         margin-top: 1.3em;
     }
 }
-
-
+@media (max-width: 310px) {
+#textSize{
+    transform: translateY(-10px);
+}
+}
 /*--------*/
 
 @media (max-width: 310px) {
@@ -1080,6 +1096,7 @@ nav>ul>li>a {
     #txtListe {
         float: none;
         width: 35%;
+        transform: translateY(-40px);
     }
 }
 
