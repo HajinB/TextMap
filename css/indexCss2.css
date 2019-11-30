@@ -863,19 +863,18 @@ nav>ul>li>a {
         width: 100%;
         min-height: none;
         display: block;
-        height: 50%;
         float: none;
         -o-object-fit: cover;
         object-fit: cover;
         text-align: center;
         overflow: hidden;
-        height: 20em;
+        height: 22em;
         margin-bottom: 8em;
+        overflow: hidden;
     }
     .headerImage {
+        min-height: 13em;
         height: auto;
-        min-height: 8em;
-        height: 22em;
     }
     .headerContainer {
         height: 33em;
