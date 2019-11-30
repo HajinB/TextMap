@@ -10,6 +10,12 @@
 body {
     background-color: white;
 }
+.survey{
+    margin-bottom: 2em;
+    margin: 1em auto;
+    display: grid;
+    grid-gap: 1em;
+}
 
 .content,
 .prototype {
@@ -45,13 +51,14 @@ body {
     margin: 0 auto;
 }
 
-
+.text{
+    margin-top: 1.56;
+ }
  
-
 .text {
     
     width: 90%;
-    margin: 0 auto;
+    margin-left: 5%;
     line-height: 1.5em;
 }
 
