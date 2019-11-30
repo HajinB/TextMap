@@ -650,8 +650,6 @@ background-color: #550f78;
 .banner {
     height: 6px;
     width: 100%;
-    background: -webkit-gradient(linear, top left, top right, color-stop(20%, rgb(255, 190, 98)), color-stop(70%, rgba(209, 78, 103, 1)));
-    background: linear-gradient(90deg, rgb(255, 190, 98) 20%, rgba(209, 78, 103, 1) 70%);
     text-align: center;
   
 }
