@@ -142,6 +142,13 @@ textSize.onmouseout = function (){
     dropBtn.setAttribute('aria-expanded', false);
 }
 
+document.onclick = function(event) {
+    if((event.target != dropBtn || event.target != dropBtn.childNodes) && aapenTextSize){
+        aapenTextSize = Boolean(false);
+        textSizeDrop.style.display = "none";
+        dropBtn.setAttribute('aria-expanded', false);
+    }
+}
 //display: none;
 //visibility: hidden;
 //var el = document.getElementById('#foo');
