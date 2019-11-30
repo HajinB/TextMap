@@ -514,21 +514,21 @@ a:focus {
 }
 
 #cookiesBox {
-    position: fixed;
     display: none;
     float: left;
     width: 100%;
+    min-height: 34px;
     color: white;
     font-size: 1em;
+    padding-top: 5px;
     top: 0;
     opacity: 0.9;   
     background-color: #303030;
     z-index: 999;
+    position: relative;
 }
 
-#btnAccept {
-    max-height: 70px;
-    margin: 0 auto;
+#btnAccept {   
     width: 120px;
     font-size: 1.1em;
     background-color: black;
@@ -536,10 +536,21 @@ a:focus {
     text-decoration: none;
     border: none;
     border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
-#btnAccept:hover {
+#cookiesLink {
+    color: white;
+}
+
+#cookiesLink:hover {
     cursor: pointer;
+}
+
+#cookiesTxt {
+    margin-right: 125px;
 }
 
 .headerMain {
@@ -705,7 +716,6 @@ video{
 }
 
 #videoHome{
-    -moz-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
     -o-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
