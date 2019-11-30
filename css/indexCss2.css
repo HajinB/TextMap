@@ -58,9 +58,20 @@ body {
 main {
     margin-top: -4px;
 }
-
+h1, h2{
+    
+}
+#mainheader{
+width: 80%;
+text-align: center;
+margin: 0 auto;
+}
 ul>li {
     list-style: none;
+}
+.bullet{
+    list-style: disc;
+    margin-left: 2em;
 }
 
 .siteMapItem {
@@ -1008,7 +1019,7 @@ margin-left: 0 !important;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 433px) {
     #txtListe {
         
         width: 60%;

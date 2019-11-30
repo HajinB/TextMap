@@ -5,37 +5,49 @@
     <title>Home - TextMap Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/productCss.css">
     <link rel="stylesheet" type="text/css" href="css/indexCss2.css" />
+    <link rel="stylesheet" type="text/css" href="css/productCss.css">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
+
+    <div id="cookiesBox">
+        <div id="cookiesTxt">
+            <a>We use localStorage to offer you a better experience. By continuing to use this website, you consent to
+                the use of localStorage in accordance with our <a id="cookiesLink" href="policy.html">localStorage
+                    Policy</a></a>
+        </div>
+        <button id="btnAccept">Accept</button>
+    </div>
+
     <nav aria-labelledby="landmarkControls" class="controls" id="controls">
         <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
         <ul class="ul-controls">
-            <div class="skiplinkWrapper">
-                <li class="li-skipLink">
-                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to content
+            <li class="skiplinkWrapper">
+                <div class="li-skipLink">
+                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
                     </a>
-                </li>
-            </div>
-            
-            <li  aria-expanded="false" class="textSize textSizeJS dropbtn" id="textSize">
-                <button id="dropbtn" class="dropbtn txtControls" onclick="textSizeDropDown()" aria-expanded="false"> 
-                    Change Text
+                </div>
+            </li>
+
+            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                <button id="dropBtn" class="txtControls" tabindex="0" aria-expanded="false">Change Text
                     Size
                 </button>
-                <ul id="textSizeDropDown" class="textSizeDrop dropdown-content">
-                    <button tabindex="0" class="textSizeValg" id="size1" data-valg="0">T 100%</button>
-                    <button tabindex="0" class="textSizeValg" id="size2" data-valg="1">T 150%</button>
-                    <button tabindex="0" class="textSizeValg" id="size3" data-valg="2">T 200%</button>
+                <ul class="textSizeDrop">
+                    <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100%
+                        </button></li>
+                    <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150%
+                        </button></li>
+                    <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200%
+                        </button></li>
                 </ul>
             </li>
 
 
             <li class="textSize" id="textSizeNoJS">
-                <a href="textsize.html"class="txtControls  textsizeactive">Change Text
+                <a href="textsize.html" class="txtControls">Change Text
                     Size
                 </a>
             </li>
@@ -43,8 +55,9 @@
 
             <li class="li-language">
                 <a class="txtControls" href="#lang">
-                    Language
+                    Norsk
                 </a>
+                <img alt="Bytt til norsk" class="imgFlag" src="media/norwegian.png">
             </li>
         </ul>
     </nav>
@@ -53,13 +66,13 @@
         <div id="headBoks">
 
             <a class="logoHead" href="index.html">
-                <p class="logotext">MapText</p>
-                <img title="Home" id="aLogo" id="logo" src="media/TextMapLogo.png" alt="banner">
+
+                <img title="Home" id="aLogo" src="media/TextMapLogoFin.png" alt="banner">
             </a>
 
             <ul id="txtListe">
                 <li class="home">
-                    <a class="txtHead" href="index.html">Home</a>
+                    <a class="txtHead active" href="index.html">Home</a>
                 </li>
 
                 <li class="problem">
@@ -69,92 +82,117 @@
         </div>
     </nav>
     <main>
-            <div class="content">
-                    
-                    <section class="survey">
-                        <h1 class="title" id="Survey">Text size</h1>
-                       
-                        <p class="text">
-                           Increase text size by clicking these links or by blalbalb 
-                           <a href="index.html">100%</a>
+        <div class="content">
 
-                           <a href="index150.html">150%</a>
+            <section class="survey">
+                <h1 class="title" id="Survey">Text size</h1>
 
-                           <a href="index200.html">200%</a>
-                        </p>
-                    </section>
-                </div>
+                <section class="text">
+                    <p>You can increase text size by clicking one of the links below.</p>
+
+                    <br>
+
+                    <p>
+                        If you want to make the text size larger in your browser press these two keys at the same time:
+                        <br>
+
+                        <ul>
+                            <li class="bullet">Ctrl and + keys in Windows, Linux, and Chrome OS</li>
+                            <li class="bullet"> ⌘ and + keys in Mac OS</li>
+                        </ul>
+                    </p>
+                    <br>
+
+                    <p>
+
+                        <a href="index.html">
+                            Increase text size by:
+                            100% </a>
+                    </p>
+
+                    <p>
+                        <a href="index150.html"> Increase text size by:
+                            150%</a>
+                    </p>
+
+                    <p>
+
+                        <a href="index200.html"> Increase text size by: 200%</a>
+                    </p>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
-            <nav aria-labelledby="landmarkFooter">
-                <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
-                <ul class="sitemapFooter" id="sitemapIndex">
-                    <li class="sitemapOverskrift siteMapItem">
-                        <a href="index.html">
-                            <h3>Home</h3>
-                        </a>
+        <nav aria-labelledby="landmarkFooter">
+            <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
+            <ul class="sitemapFooter" id="sitemapIndex">
+                <li class="sitemapOverskrift siteMapItem">
+                    <a href="index.html">
+                        <h3>Home</h3>
+                    </a>
+                </li>
+
+                <li class="siteMapItem"><a href="index.html#ideaSection">Idea</a></li>
+
+                <li class="siteMapItem"><a href="index.html#video">Video</a></li>
+
+                <li class="siteMapItem"><a href="#videoDownload">
+                        Video link
+                        <img class="externallinkLogo" alt="opens in a new window" width="12"
+                            src="media/externallink.png">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sitemapFooter" id="sitemapProblem">
+                <li class="siteMapItem sitemapOverskrift">
+                    <a href="product.html">
+                        <h3>Product</h3>
+                    </a>
+                </li>
+
+                <li class="siteMapItem">
+                    <a href="product.html#Problem">Problem</a>
+                </li>
+
+                <li class="siteMapItem">
+                    <a href="product.html#Solution">Solution</a>
+                </li>
+                <li class="siteMapItem"> <a href="product.html#Prototype">Sources</a></li>
+            </ul>
+
+            <section class="personerContainer">
+                <ul class="sitemapFooter" id="personer">
+                    <h3 class="lagetAvHeading">Created by:</h3>
+                    <li>
+                        <p>Hajin Barzingi</p>
                     </li>
-    
-                    <li class="siteMapItem"><a href="index.html#ideaSection">Idea</a></li>
-    
-                    <li class="siteMapItem"><a href="index.html#video">Video</a></li>
-    
-                    <li class="siteMapItem"><a href="#videoDownload">
-                            Video link
-                            <img class="externallinkLogo" alt="opens in a new window" width="12"
-                                src="media/externallink.png">
-                        </a>
+                    <li>
+                        <p>Jørund Topp Løvlien</p>
+                    </li>
+                    <li>
+                        <p>Nina Hübertz Emaus</p>
+                    </li>
+                    <li>
+                        <p>Nikola Dordevic</p>
+                    </li>
+                    <li>
+                        <p>Ola Gynnild Berg</p>
+                    </li>
+                    <li>
+                        <p>Rosa Berg</p>
+                    </li>
+                    <li>
+                        <p>Tom Basmo</p>
                     </li>
                 </ul>
-    
-                <ul class="sitemapFooter" id="sitemapProblem">
-                    <li class="siteMapItem sitemapOverskrift">
-                        <a href="product.html">
-                            <h3>Product</h3>
-                        </a>
-                    </li>
-    
-                    <li class="siteMapItem">
-                        <a href="product.html#Problem">Problem</a>
-                    </li>
-    
-                    <li class="siteMapItem">
-                        <a href="product.html#Solution">Solution</a>
-                    </li>
-                    <li class="siteMapItem"> <a href="product.html#Prototype">Sources</a></li>
-                </ul>
-    
-                <section class="personerContainer">
-                    <ul class="sitemapFooter" id="personer">
-                        <h3 class="lagetAvHeading">Created by:</h3>
-                        <li>
-                            <p>Hajin Barzingi</p>
-                        </li>
-                        <li>
-                            <p>Jørund Topp Løvlien</p>
-                        </li>
-                        <li>
-                            <p>Nina Hübertz Emaus</p>
-                        </li>
-                        <li>
-                            <p>Nikola Dordevic</p>
-                        </li>
-                        <li>
-                            <p>Ola Gynnild Berg</p>
-                        </li>
-                        <li>
-                            <p>Rosa Berg</p>
-                        </li>
-                        <li>
-                            <p>Tom Basmo</p>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
-        </footer>
+            </section>
+        </nav>
+    </footer>
 
 
-    
+
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
