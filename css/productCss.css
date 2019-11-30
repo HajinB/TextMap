@@ -83,7 +83,10 @@ body {
     width: 90%;
 }
 
-
+.figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 
