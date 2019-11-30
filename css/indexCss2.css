@@ -225,6 +225,8 @@ a.skipLink:hover {
     padding: 0;
     width: 100%;
     cursor: pointer;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #dropBtn {
@@ -1029,10 +1031,6 @@ margin-left: 0 !important;
   
     .presentation {
         width: 80%;
-    }
-    #textSize{
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
     }
 }
 

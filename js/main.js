@@ -1,4 +1,4 @@
-var textSize = localStorage.getItem("textSize");
+var textSizeLookal = localStorage.getItem("textSize");
 var htmlCss = document.getElementsByTagName("html");
 var textSizeDrop = document.getElementsByClassName("textSizeDrop")[0];
 var textSize = document.getElementById("textSize");
@@ -9,33 +9,34 @@ var aapenTextSize = Boolean(false);
 var valg1 = document.getElementById("size1");
 var valg2 = document.getElementById("size2");
 var valg3 = document.getElementById("size3");
-valg1.style.backgroundColor = "#C2C5CC";
+
 function sjekkSize(){
-    if(textSize == null){
+    valg1.style.backgroundColor = "#C2C5CC";
+    if(textSizeLookal == null){
         localStorage.setItem("textSize", "medium");
         valg1.style.backgroundColor = "#C2C5CC";
         valg2.style.backgroundColor = "#FFFFFF";
         valg3.style.backgroundColor = "#FFFFFF";
     }
-    else if(textSize == "medium"){
+    else if(textSizeLookal == "medium"){
         htmlCss[0].style.fontSize = "medium";
         valg1.style.backgroundColor = "#C2C5CC";
         valg2.style.backgroundColor = "#FFFFFF";
         valg3.style.backgroundColor = "#FFFFFF";
     }
-    else if(textSize == "large"){
+    else if(textSizeLookal == "large"){
         htmlCss[0].style.fontSize = "large";
         valg1.style.backgroundColor = "#FFFFFF";
         valg2.style.backgroundColor = "#C2C5CC";
         valg3.style.backgroundColor = "#FFFFFF";
     }
-    else if(textSize == "x-large"){
+    else if(textSizeLookal == "x-large"){
         htmlCss[0].style.fontSize = "x-large";
         valg1.style.backgroundColor = "#FFFFFF";
         valg2.style.backgroundColor = "#FFFFFF";
         valg3.style.backgroundColor = "#C2C5CC";
     }
-}
+}        sjekkSize();
 
 var evtTextSize = document.querySelectorAll(".textSizeValg");
 for(var i = 0; i < evtTextSize.length; i++){
@@ -123,7 +124,6 @@ function sjekkCookies(){
     var cookies = localStorage.getItem("cookies");
     if(cookies == "ja"){
         cookiesBox.style.display = "none";
-        sjekkSize();
     }
     else{
         cookiesBox.style.display = "block";
