@@ -3,12 +3,11 @@
 * {
     margin: 0;
     padding: 0;
-    color: black;
-    
 }
 
 body {
     background-color: white;
+    color: black;
 }
 .survey{
     margin-bottom: 2em;
