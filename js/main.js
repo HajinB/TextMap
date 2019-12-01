@@ -141,33 +141,6 @@ textSize.onmouseout = function (){
     textSizeDrop.style.display = "none";
     dropBtn.setAttribute('aria-expanded', false);
 }
-//display: none;
-//visibility: hidden;
-//var el = document.getElementById('#foo');
-//el[i].className += ' my-class'; //
-
-
-/*
-const topLevelLink = document.querySelectorAll('.txtControls');
-console.log(topLevelLink);
-
-topLevelLink.forEach(link => {
-    if (link.nextElementSibling) {
-      link.addEventListener('focus', function() {
-        this.parentElement.classList.add('focus')
-      })
-  
-      const subMenu = link.nextElementSibling
-      const subMenuLinks = subMenu.querySelectorAll('li')
-      const lastLinkIndex = subMenuLinks.length - 1
-      const lastLink = subMenuLinks[lastLinkIndex]
-  
-      lastLink.addEventListener('blur', function() {
-        link.parentElement.classList.remove('focus')
-      })
-    }
-  })
-*/
 
 function hvisJShide() {
     document.getElementById("textSizeNoJS").style.display = "none";
