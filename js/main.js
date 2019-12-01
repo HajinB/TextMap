@@ -102,17 +102,18 @@ function endreTextSize(n) {
 }
 
 dropBtn.onkeypress = function(event) {
-    if(event.keyCode == 13 && !aapenTextSize){
+    if((event.keyCode == 13 || event.keyCode == 32 ) && !aapenTextSize){
         aapenTextSize = Boolean(true);
         textSizeDrop.style.display = "block";
         dropBtn.setAttribute('aria-expanded', true);
     }
-    else if(event.keyCode == 13 && aapenTextSize){
+    else if((event.keyCode == 13 || event.keyCode == 32 )&& aapenTextSize){
         aapenTextSize = Boolean(false);
         textSizeDrop.style.display = "none";
         dropBtn.setAttribute('aria-expanded', false);
     }
 }
+
 
 btnAccept.onclick = function(){
     cookiesBox.style.display = "none";
@@ -141,15 +142,43 @@ textSize.onmouseout = function (){
     textSizeDrop.style.display = "none";
     dropBtn.setAttribute('aria-expanded', false);
 }
+//display: none;
+//visibility: hidden;
+//var el = document.getElementById('#foo');
+//el[i].className += ' my-class'; //
+
+
+/*
+const topLevelLink = document.querySelectorAll('.txtControls');
+console.log(topLevelLink);
+
+topLevelLink.forEach(link => {
+    if (link.nextElementSibling) {
+      link.addEventListener('focus', function() {
+        this.parentElement.classList.add('focus')
+      })
+  
+      const subMenu = link.nextElementSibling
+      const subMenuLinks = subMenu.querySelectorAll('li')
+      const lastLinkIndex = subMenuLinks.length - 1
+      const lastLink = subMenuLinks[lastLinkIndex]
+  
+      lastLink.addEventListener('blur', function() {
+        link.parentElement.classList.remove('focus')
+      })
+    }
+  })
+*/
 
 function hvisJShide() {
-    if(screen.width > 600){
-        document.getElementById("textSizeNoJS").style.display = "none";
-        document.getElementById("textSizeNoJS").style.visibility = "hidden";
-        
-        document.getElementById("textSize").style.display = "inline-block";
-        document.getElementById("textSize").style.visibility = "visible";
-    }
+    document.getElementById("textSizeNoJS").style.display = "none";
+    document.getElementById("textSizeNoJS").style.visibility = "hidden";
+
+
+    document.getElementById("textSize").style.display = "inline-block";
+    document.getElementById("textSize").style.visibility = "visible";
+
+
 }hvisJShide();
 
 
