@@ -40,11 +40,11 @@ body {
 
 
 .slides {
-    background-color: white;
-    border: orange 2px solid;
+    bborder: grey 2px solid;
     padding-bottom: 1em;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title {
@@ -140,12 +140,12 @@ body {
 .surveyClass{
     border-bottom: 2px solid orange;
 }
-.orangeLine{
-    border-bottom: 2px solid orange;
+.purpleLine{
+    border-bottom: 2px solid purple;
     width: inherit;
 }
 .solutionClass{
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid orange;
 }
 .figures {
     display: block;
