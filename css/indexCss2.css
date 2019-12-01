@@ -133,6 +133,7 @@ a.skipLink:hover {
 }
 #textSize{
     height: auto;
+    display: none;
 }
 
 
