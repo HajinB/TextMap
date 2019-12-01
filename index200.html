@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: x-large">
 
 <head>
     <title>Home - TextMap Application</title>
@@ -10,55 +10,62 @@
 </head>
 
 <body>
-    <nav tabindex="-1" class="controls" id="controls">
+        
+    <div id="cookiesBox">
+        <div id="cookiesTxt">
+                <a>We use localStorage to offer you a better experience. By continuing to use this website, you consent to the use of localStorage in accordance with our <a id="cookiesLink" href="policy.html">localStorage Policy</a></a>
+            </div>
+        <button id="btnAccept">Accept</button>
+    </div>
+    
+    <nav aria-labelledby="landmarkControls" class="controls" id="controls">
+        <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
+
         <ul class="ul-controls">
-            <li class="li-skipLink">
-                <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to content
-                </a>
+            <li class="skiplinkWrapper">
+                <div class="li-skipLink">
+                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
+                    </a>
+                </div>
             </li>
 
-
-
             <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
-                <a class="txtControls"><span aria-hidden="true" class="textSizeLogo"></span>Change Text
+                <button id="dropBtn" class="txtControls dropBtn" tabindex="0" aria-expanded="false">Change Text
                     Size
-                </a>
+                </button>   
                 <ul class="textSizeDrop">
-                    <li class="textSizeValg" id="size1" data-valg="0">T 100%</li>
-                    <li class="textSizeValg" id="size2" data-valg="1">T 150%</li>
-                    <li class="textSizeValg" id="size3" data-valg="2">T 200%</li>
+                    <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100% </button></li>
+                    <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150% </button></li>
+                    <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200% </button></li>
                 </ul>
             </li>
 
 
             <li class="textSize" id="textSizeNoJS">
-                <a class="txtControls" href="#textsize.html">Change Text
+                <a href="textsize.html" class="txtControls">Change Text
                     Size
                 </a>
-                <ul class="textSizeDrop">
-                    <li class="textSizeValg" id="size1NoJs" data-valg="0"><a>T 100%</a></li>
-                    <li class="textSizeValg" id="size2NoJs" data-valg="1"><a href="index150.html">T 150%</a></li>
-                    <li class="textSizeValg" id="size3NoJs" data-valg="2"><a href="index200.html">T 200%</a></li>
-                </ul>
             </li>
 
 
-            <li class="li-language">
-                <a class="txtControls" href="#lang">
-                    Language
+            <li class="li-language" lang="no">
+                <a class="txtControls" href="indexNorsk.html">
+                    Norsk
                 </a>
-                
+                <a href="indexNorsk.html">
+                    <img alt="Bytt til norsk" class="imgFlag" src="media/norwegian.png">
+                </a>
             </li>
         </ul>
     </nav>
 
     <nav id="header">
         <div id="headBoks">
-            <a class="logoHead" href="index.html"><span class="logotext"></span><img id="aLogo" id="logo" src="media/74168387_572323330185919_8921402094682898432_n.png" alt="banner" /></a>
 
-            <button aria-expanded="true" id="hamburger">
-                <span><img src="media/iconfinder_menu-alt_134216.png" alt="" role="menu" />Menu</span>
-            </button>
+            <a class="logoHead" href="index.html">
+                
+                <img title="Home" id="aLogo" src="media/TextMapLogoFin.png" alt="text map banner">
+            </a>
 
             <ul id="txtListe">
                 <li class="home">
@@ -71,14 +78,16 @@
             </ul>
         </div>
     </nav>
-    <div role="banner" class="banner">
-        <img class="bannerIMG" src="media/banner2.jpg" alt="The TextMap application provide the user with the option to view a map of your location." title="A snippet of a local map seen through TextMap." />
+
+   <div class="banner">
     </div>
 
     <main class="content">
         <section class="homeWrapper" id="ideaSection">
+
+
             <div class="sitater">
-                <h1>TextMap</h1>
+                <h1 id="mainheader">TextMap</h1>
                 <p>
                     The app making real world text accessible. Connect with the world.
                     Find important information near you, today.
@@ -86,31 +95,57 @@
             </div>
 
             <div class="homeVideo">
-                <div class="videoWrap">
-                    <iframe id="video" width="560" title="MapText" height="315" src="https://www.youtube-nocookie.com/embed/aKCMtJGGWlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="videoWrap" aria-labelledby="landmarkVideo">
+                    <h2 id="landmarkVideo" class="landmarkControls">Video explaining usage of TextMap</h2>
+                    <video title="Text map video" id="videoHome" width="400" height="300"
+                           preload="metadata"
+                           poster="media/poster.jpg"
+                           controls>
+                        <source src="media/video_mp4.mp4" type="video/mp4" />
+                        <source src="media/video_webm.webm" type="video/webm" />
+                        <track src="media/subtitles-en.vtt" kind="subtitles" default srclang="en" label="English">
+                        <track src="media/subtitles-no.vtt" kind="subtitles" srclang="no" label="Norsk">
+                        <p>A video demonstration of uses for the TextMap app.
+                            Download the video here:<a href="https://github.com/olagberg/TextMap-video/archive/master.zip" target="_blank">(direct download)<img class="externallinkLogo" alt="Video download opens in a new window" width="12"
+                            src="media/externallink.png"></a>
+                            Watch it at YouTube here: <a href:"https://youtu.be/qqEQsEGVtHQ" target="_blank">(opens in a new window)</a></p>
+                    </video> 
                 </div>
             </div>
         </section>
 
-        <a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan">Back to Top</span></a>
+
 
     </main>
 
     <footer>
-        <nav>
+        <nav aria-labelledby="landmarkFooter">
+            <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
+            
             <ul class="sitemapFooter" id="sitemapIndex">
                 <li class="sitemapOverskrift siteMapItem">
                     <a href="index.html">
-                        <Strong>Home</Strong>
+                        <h3>Home</h3>
                     </a>
                 </li>
+
                 <li class="siteMapItem"><a href="index.html#ideaSection">Idea</a></li>
-                <li class="siteMapItem"><a href="index.html#video">Video</a></li>
+
+                <li class="siteMapItem"><a href="index.html#videoHome">Video</a></li>
+
+                <li class="siteMapItem"><a href="https://github.com/olagberg/TextMap-video/archive/master.zip" target="_blank">
+                        Download video
+                        <img class="externallinkLogo" alt="Video download opens in a new window" width="12"
+                            src="media/externallink.png">
+                    </a>
+                </li>
             </ul>
 
             <ul class="sitemapFooter" id="sitemapProblem">
                 <li class="siteMapItem sitemapOverskrift">
-                    <a href="product.html"><Strong>Product</Strong></a>
+                    <a href="product.html">
+                        <h3>Product</h3>
+                    </a>
                 </li>
 
                 <li class="siteMapItem">
@@ -120,23 +155,20 @@
                 <li class="siteMapItem">
                     <a href="product.html#Solution">Solution</a>
                 </li>
-                <li class="siteMapItem"> <a href="product.html#Prototype">Sources</a></li>
+
+                <li class="siteMapItem"> <a href="product.html#Sources">Sources</a></li>
             </ul>
 
             <section class="personerContainer">
+                <h3 class="lagetAvHeading">Created by:</h3>
                 <ul class="sitemapFooter" id="personer">
-                    <h6>Laget av:</h6>
+                    
                     <li>
                         <p>Hajin Barzingi</p>
                     </li>
+
                     <li>
-                        <p>Jørund Topp Løvlien</p>
-                    </li>
-                    <li>
-                        <p>Nina Hübertz Emaus</p>
-                    </li>
-                    <li>
-                        <p>Nikola Dordevic</p>
+                        <p>Tom Basmo</p>
                     </li>
                     <li>
                         <p>Ola Gynnild Berg</p>
@@ -145,12 +177,20 @@
                         <p>Rosa Berg</p>
                     </li>
                     <li>
-                        <p>Tom Basmo</p>
+                        <p>Nikola Dordevic</p>
+                    </li>
+                    <li>
+                        <p>Nina Hübertz Emaus</p>
+                    </li>
+                    <li>
+                        <p>Jørund Topp Løvlien</p>
                     </li>
                 </ul>
             </section>
         </nav>
     </footer>
+    <a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan">Back to Top</span></a>
+
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>

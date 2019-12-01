@@ -119,19 +119,23 @@ body {
 }
 #prototypetitle {
     text-decoration: underline;
+    -webkit-text-decoration-color: gray;
     text-decoration-color: gray;
 }
 
 #h1TextMap{
     text-decoration: underline;
+    -webkit-text-decoration-color: orange;
     text-decoration-color: orange;
 }
 #Problem{
     text-decoration: underline;
+    -webkit-text-decoration-color: #707070;
     text-decoration-color: #707070;
 }
 #Survey{
     text-decoration: underline;
+    -webkit-text-decoration-color: #707070;
     text-decoration-color: #707070;
 }
 .problemClass{
@@ -145,6 +149,7 @@ body {
 }
 #Solution{
     text-decoration: underline;
+    -webkit-text-decoration-color: #707070;
     text-decoration-color: #707070;
 }
 .figures {
@@ -237,10 +242,6 @@ body {
 @media only screen and (min-width: 1200px) {
     .text {
         font-size: 1em;
-    }
-    .textSize,
-    .li-language {
-        font-size: 1.2em;
     }
     .content {
         width: 65%;
