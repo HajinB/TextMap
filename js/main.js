@@ -181,6 +181,19 @@ function hvisJShide() {
 }hvisJShide();
 
 
+document.addEventListener('click', function (event) {
+    if (!event.target.matches('.dropBtn')) {
+        for (i = 0; i < textSizeDrop.length; i++) {
+            
+            if (aapenTextSize) {
+                aapenTextSize = Boolean(false);
+                textSizeDrop.style.display = "none";
+                dropBtn.setAttribute('aria-expanded', false);
+            }
+        }
+    }
+    
+}, false);
 
 
 
