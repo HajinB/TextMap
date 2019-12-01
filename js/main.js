@@ -143,14 +143,13 @@ textSize.onmouseout = function (){
 }
 
 function hvisJShide() {
-    document.getElementById("textSizeNoJS").style.display = "none";
-    document.getElementById("textSizeNoJS").style.visibility = "hidden";
-
-
-    document.getElementById("textSize").style.display = "inline-block";
-    document.getElementById("textSize").style.visibility = "visible";
-
-
+    if(screen.width > 600){
+        document.getElementById("textSizeNoJS").style.display = "none";
+        document.getElementById("textSizeNoJS").style.visibility = "hidden";
+        
+        document.getElementById("textSize").style.display = "inline-block";
+        document.getElementById("textSize").style.visibility = "visible";
+    }
 }hvisJShide();
 
 
