@@ -181,7 +181,7 @@ function hvisJShide() {
 }hvisJShide();
 
 document.addEventListener('click', function (event) {
-    if (!event.target.matches('.textSizeDrop')) {
+    if (!event.target.matches('.dropBtn')) {
         for (i = 0; i < textSizeDrop.length; i++) {
             
             if (aapenTextSize) {
@@ -191,7 +191,7 @@ document.addEventListener('click', function (event) {
             }
         }
     }
-    event.preventDefault();
+    
 }, false);
 
 
