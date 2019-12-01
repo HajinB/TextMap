@@ -501,9 +501,9 @@ a:focus {
 }
 
 .backToTop {
-    -webkit-box-shadow: 0 3px 10px 1px black;
-    box-shadow: 0 3px 10px 1px black;
-    background-color: #dc8c15;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: orange;
     position: fixed;
     bottom: 16px;
     right: 16px;
@@ -511,7 +511,6 @@ a:focus {
     width: 6.3em;
     text-align: center;
     box-shadow: 0 3px 10px 1px black;
-    background-color: #dc8c15;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4%;
