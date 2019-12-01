@@ -54,7 +54,7 @@ body {
 }
 
 .text{
-    margin-top: 1.56;
+    margin-top: 1.56em;
  }
  
 .text {
@@ -139,10 +139,6 @@ body {
 }
 .surveyClass{
     border-bottom: 2px solid orange;
-}
-.purpleLine{
-    border-bottom: 2px solid purple;
-    width: inherit;
 }
 .solutionClass{
     border-bottom: 2px solid orange;
