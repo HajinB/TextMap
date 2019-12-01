@@ -248,7 +248,7 @@ body {
     .prototype {
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5em;
-        grid-column-gap: 8em;
+        grid-column-gap: 4em;
     }
 
     #prototypetitle {
@@ -259,7 +259,7 @@ body {
         grid-column: 1/3;
     }
     .slideImages {
-        width: 40%;
+        width: 60%;
         height: auto;
     }
     .tablecontent {
