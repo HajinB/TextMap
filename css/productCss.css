@@ -31,7 +31,7 @@ body {
 
 .content {
 
-    border-bottom:2px solid #e0e0e0;
+   /* border-bottom:2px solid #e0e0e0; */
     /*
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -110,8 +110,31 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-@media only screen and (max-width: 500px) {
+#h1TextMap{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+#Problem{
+    text-decoration: underline;
+    text-decoration-color: #707070;
+}
+#Survey{
+    text-decoration: underline;
+    text-decoration-color: #707070;
+}
+.problemClass{
+    border-bottom: 2px solid orange;
+}
+.surveyClass{
+    border-bottom: 2px solid orange;
+}
+.orangeLine{
+    border-bottom: 2px solid orange;
+    width: inherit;
+}
+.solutionClass{
+    border-bottom: 2px solid purple;
+}
 .figures {
     display: block;
     grid-template-columns: 1fr 1fr;
@@ -120,7 +143,7 @@ body {
 .headerImage{
     min-height: 150px;
 }
-}
+
 @media only screen and (max-width: 500px) {
     .headerFigure{
         -webkit-transform: translateY(-80px);
