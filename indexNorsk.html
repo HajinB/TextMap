@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - TextMap Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/indexCss2.css" />
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+        
+    <div id="cookiesBox">
+        <div id="cookiesTxt">
+                <a>Vi bruker localStorage for å tilby deg en bedre opplevelse. Ved å fortsette å bruke dette nettstedet, samtykker du til bruk av localStorage i samsvar med vår<a id="cookiesLink" href="policyNorsk.html">localStorage politikk</a></a>
+            </div>
+        <button id="btnAccept">Godta</button>
+    </div>
+    
+    <nav aria-labelledby="landmarkControls" class="controls" id="controls">
+        <h2 id="landmarkControls" class="landmarkControls">Kontroller</h2>
+
+        <ul class="ul-controls">
+            <li class="skiplinkWrapper">
+                <div class="li-skipLink">
+                    <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Gå til hoved innhold
+                    </a>
+                </div>
+            </li>
+
+            <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+                <button id="dropBtn" class="txtControls dropBtn" tabindex="0" aria-expanded="false">Bytt tekst størrelse
+                </button>   
+                <ul class="textSizeDrop">
+                    <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100% </button></li>
+                    <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150% </button></li>
+                    <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200% </button></li>
+                </ul>
+            </li>
+
+
+            <li class="textSize" id="textSizeNoJS">
+                <a href="textsizeNorsk.html" class="txtControls"> Bytt tekst størrelse
+                </a>
+            </li>
+
+
+            <li class="li-language">
+                <a class="txtControls" href="index.html">
+                    English
+                </a>
+                <a href="index.html">
+                    <img alt="Change to english" class="imgFlag" src="media/british.png">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="header">
+        <div id="headBoks">
+
+            <a class="logoHead" href="indexNorsk.html">
+                
+                <img title="Home" id="aLogo" src="media/TextMapLogoFin.png" alt="text map banner">
+            </a>
+
+            <ul id="txtListe">
+                <li class="home">
+                    <a class="txtHead active" href="indexNorsk.html">Hjem</a>
+                </li>
+
+                <li class="problem">
+                    <a class="txtHead" href="productNorsk.html">Produkt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <div class="banner">
+    </div>
+
+    <main class="content">
+        <section class="homeWrapper" id="ideaSection">
+
+
+            <div class="sitater">
+                <h1 id="mainheader">TextMap</h1>
+                <p>
+                   Appen gjør tekst i ekte verden tilgjengelig. Få kontakt med verden. Finn viktig informasjon i nærheten av deg, i dag.
+                </p>
+            </div>
+
+            <div class="homeVideo">
+                <div class="videoWrap" aria-labelledby="landmarkVideo">
+                    <h2 id="landmarkVideo" class="landmarkControls">Video som forklarer bruken av TextMap</h2>
+                    <video title="Text map video" id="videoHome" width="400" height="300"
+                           preload="auto"
+                           controls>
+                        <source src="media/video_mp4.mp4" type="video/mp4" />
+                        <source src="media/video_webm.webm" type="video/webm" />
+                        <track src="media/subtitles-en.vtt" kind="subtitles" default srclang="en" label="English">
+                        <track src="media/subtitles-no.vtt" kind="subtitles" srclang="no" label="Norsk">
+                        <p>En videodemonstrasjon av bruk for TextMap-appen. Last ned videoen her: Se den på YouTube her (åpnes i et nytt vindu</p>
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <nav aria-labelledby="landmarkFooter">
+            <h2 id="landmarkFooter" class="landmarkControls">Bunntekst</h2>
+            
+            <ul class="sitemapFooter" id="sitemapIndex">
+                <li class="sitemapOverskrift siteMapItem">
+                    <a href="indexNorsk.html">
+                        <h3>Hjem</h3>
+                    </a>
+                </li>
+
+                <li class="siteMapItem"><a href="index.htmlNorsk#ideaSection">Ide</a></li>
+
+                <li class="siteMapItem"><a href="index.htmlNorsk#videoHome">Video</a></li>
+
+                <li class="siteMapItem"><a href="#videoDownload">
+                        Video link
+                        <img class="externallinkLogo" alt="Video download opens in a new window" width="12"
+                            src="media/externallink.png">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sitemapFooter" id="sitemapProblem">
+                <li class="siteMapItem sitemapOverskrift">
+                    <a href="productNorsk.html">
+                        <h3>Produkt</h3>
+                    </a>
+                </li>
+
+                <li class="siteMapItem">
+                    <a href="productNorsk.html#Problem">Problem</a>
+                </li>
+
+                <li class="siteMapItem">
+                    <a href="productNorsk.html#Solution">Løsning</a>
+                </li>
+
+                <li class="siteMapItem"> <a href="productNorsk.html#Sources">Kilder</a></li>
+            </ul>
+
+            <section class="personerContainer">
+                    <h3 class="lagetAvHeading">Laget av:</h3>
+                    <ul class="sitemapFooter" id="personer">
+                    
+                    <li>
+                        <p>Hajin Barzingi</p>
+                    </li>
+                    <li>
+                        <p>Jørund Topp Løvlien</p>
+                    </li>
+                    <li>
+                        <p>Nina Hübertz Emaus</p>
+                    </li>
+                    <li>
+                        <p>Nikola Dordevic</p>
+                    </li>
+                    <li>
+                        <p>Ola Gynnild Berg</p>
+                    </li>
+                    <li>
+                        <p>Rosa Berg</p>
+                    </li>
+                    <li>
+                        <p>Tom Basmo</p>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </footer>
+    <a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan">Til toppen</span></a>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
