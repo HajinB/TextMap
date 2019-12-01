@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 0.002em;
+    scroll-behavior: smooth;
 }
 
 
@@ -873,6 +874,7 @@ nav>ul>li>a {
         height: 20em;
         
         margin-bottom: 8em;
+        -webkit-transform: translateY(-40px);
         transform: translateY(-40px);
     }
     .headerImage {
