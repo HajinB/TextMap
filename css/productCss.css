@@ -41,8 +41,10 @@ body {
 
 .slides {
     background-color: white;
+    border: orange 2px solid;
+    padding-bottom: 1em;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title {
@@ -93,6 +95,11 @@ body {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    color: orange;
+}
+
+.table > ol > li > a {
+    color: orange;
 }
 
 .delTable {
@@ -110,6 +117,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+#prototypetitle {
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
 #h1TextMap{
     text-decoration: underline;
     text-decoration-color: orange;
@@ -155,6 +167,12 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#sourcDiv {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
 /* Tablet */
 
 @media only screen and (min-width: 800px) {
@@ -196,15 +214,8 @@ body {
         -webkit-box-shadow: 0px 0px 0px 0px;
         box-shadow: 0px 0px 0px 0px;
     }
-    .slides {
-        background-color: white;
-        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 
-    #sourcDiv {
-        grid-column: 1/3;
-    }
+    
     .tablecontent {
         margin-left: 5%;
         width: 90%;
@@ -235,12 +246,17 @@ body {
         width: 65%;
     }
     .prototype {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 1.5em;
+        grid-column-gap: 8em;
+    }
+
+    #prototypetitle {
+        width: 60%;
     }
 
     #sourcDiv {
-        grid-column: 2/4;
+        grid-column: 1/3;
     }
     .slideImages {
         width: 40%;
@@ -254,6 +270,10 @@ body {
 
     .survey > img {
         width: auto;
+    }
+
+    .prototype {
+        width: 60%;
     }
 }
 
