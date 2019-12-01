@@ -102,30 +102,18 @@ function endreTextSize(n) {
 }
 
 dropBtn.onkeypress = function(event) {
-    if(event.keyCode == 13 && !aapenTextSize){
+    if((event.keyCode == 13 || event.keyCode == 32 ) && !aapenTextSize){
         aapenTextSize = Boolean(true);
         textSizeDrop.style.display = "block";
         dropBtn.setAttribute('aria-expanded', true);
     }
-    else if(event.keyCode == 13 && aapenTextSize){
+    else if((event.keyCode == 13 || event.keyCode == 32 )&& aapenTextSize){
         aapenTextSize = Boolean(false);
         textSizeDrop.style.display = "none";
         dropBtn.setAttribute('aria-expanded', false);
     }
 }
 
-dropBtn.onkeypress = function(event) {
-    if(event.keyCode == 32 && !aapenTextSize){
-        aapenTextSize = Boolean(true);
-        textSizeDrop.style.display = "block";
-        dropBtn.setAttribute('aria-expanded', true);
-    }
-    else if(event.keyCode == 32 && aapenTextSize){
-        aapenTextSize = Boolean(false);
-        textSizeDrop.style.display = "none";
-        dropBtn.setAttribute('aria-expanded', false);
-    }
-}
 
 btnAccept.onclick = function(){
     cookiesBox.style.display = "none";
