@@ -95,11 +95,11 @@ body {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    color: orange;
+    color: black;
 }
 
 .table > ol > li > a {
-    color: orange;
+    color: black;
 }
 
 .delTable {
@@ -142,6 +142,10 @@ body {
 }
 .solutionClass{
     border-bottom: 2px solid orange;
+}
+#Solution{
+    text-decoration: underline;
+    text-decoration-color: #707070;
 }
 .figures {
     display: block;
