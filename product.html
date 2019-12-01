@@ -26,7 +26,7 @@
 
 
         <ul class="ul-controls">
-            <div class="skiplinkWrapper">
+            <li class="skiplinkWrapper">
                 <li class="li-skipLink">
                     <a href="#Problem" class="skipLink" id="skipLink">Skip to main content
                     </a>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
 
-            </div>
+            </li>
 
             <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
                 <button id="dropBtn" class="txtControls dropBtn" tabindex="0" aria-expanded="false">Change Text
@@ -61,11 +61,13 @@
             </li>
 
 
-            <li class="li-language">
-                <a class="txtControls" href="#lang">
+            <li class="li-language" lang="no">
+                <a class="txtControls" href="indexNorsk.html">
                     Norsk
                 </a>
-                <img alt="Bytt til norsk" class="imgFlag" src="media/norwegian.png">
+                <a href="indexNorsk.html">
+                    <img alt="Bytt til norsk" class="imgFlag" src="media/norwegian.png">
+                </a>
             </li>
         </ul>
     </nav>
@@ -91,7 +93,7 @@
 
             <figure class="headerFigure">
                 <img class="headerImage" src="media/forsidebildeLITE.png"
-                    alt="texpmap Application map and search functions" />
+                    alt="text map Application map and menu" />
             </figure>
 
             <section class="headertxt">
@@ -106,7 +108,7 @@
 
     <section class="content tablecontent">
         <h2 id="tableOfContentsTitle" class="title">Table of contents</h2>
-        <ol class="table">
+        <ol class="table" aria-labelledby="tableOfContentsTitle">
             <li><a href="#Problem">Problem</a></li>
             <ol type="i" class="delTable">
                 <li><a href="#Survey">Survey</a></li>
@@ -173,8 +175,7 @@
                 </p>
 
                 <img src="media/kake1.png"
-                    alt="How often do you encounter text that is inaccessible to you?
-                                                11 percent encounter this rarely, 50 percent sometimes, and 39 percent often.">
+                    alt="Pie chart: How often do you encounter text that is inaccessible to you?">
 
                 <p class="text">
                     Almost 89 percent of visually impaired respondents confirmed they encountered issues with text,
@@ -183,8 +184,7 @@
                     further confirmed by what else we found:
                 </p>
 
-                <img src="media/kake2.png" alt="A pie chart visualising how often text is inaccessible in a
-                                                day-to-day basis of those who are visually impaired">
+                <img src="media/kake2.png" alt="Pie chart: Text being inaccessible to me is a difficulty in my day to day life">
 
                 <p class="text">
                     A majority of respondents reported that they did find active difficulties, day to day,
@@ -203,7 +203,7 @@
                 </p>
                
                 <img src="media/kake3.png"
-                    alt="A pie chart visualising how many think this application would benefit them of those who are visually impaired">
+                    alt="Pie chart: How many think this application would benefit them of those who are visually impaired">
 
                 <p class="text">
                     A majority of 52.9 percent once again confirms there is an interest in the software we are
@@ -214,7 +214,7 @@
                 </p>
 
                 <img src="media/kake4.png"
-                    alt="A pie chart visualising how many think this application would benefit them answered by non-visually impaired too">
+                    alt="Pie chart: How many think this application would benefit them answered by non-visually impaired">
 
               
                 <p class="text">
@@ -225,7 +225,7 @@
                 </p>
 
                 <img src="media/kake5.png"
-                    alt="A pie chart comparing the answers between non and visually impaired if the app solves a relevant problem">
+                    alt="Pie chart: Comparing the answers between non and visually impaired if the app solves a relevant problem">
 
                 <p class="text">
                     The survey had a box for user-feedback, where the respondents told us what they felt were
@@ -261,7 +261,7 @@
                 <section class="presentation">
                     <figure>
                         <div class="circle">
-                            <img class="presentationLogo presentationLogoPhone" alt="" src="media/phone icon.png">
+                            <img class="presentationLogo presentationLogoPhone" alt="phone icon" src="media/phone icon.png">
                         </div>
                         <h3>Access the world</h3>
                         <figcpation class="text">
@@ -274,7 +274,7 @@
                 <section class="presentation">
                     <figure>
                         <div class="circle">
-                            <img class="presentationLogo" alt="" src="media/text.png">
+                            <img class="presentationLogo" alt="text document icon" src="media/text.png">
                         </div>
                         <h3>Accessible text</h3>
                         <figcpation class="text">
@@ -289,7 +289,7 @@
                     <figure>
                         <div class="circle">
 
-                            <img class="presentationLogo presentationLogoMap" alt="" src="media/map.png">
+                            <img class="presentationLogo presentationLogoMap" alt="map icon" src="media/map.png">
                         </div>
 
 
@@ -306,7 +306,7 @@
                     <figure>
                         <div class="circle">
 
-                            <img class="presentationLogo presentationLogoBell" alt="" src="media/notification_8.png">
+                            <img class="presentationLogo presentationLogoBell" alt="notification icon" src="media/notification_8.png">
                         </div>
                         <h3>Be Notified</h3>
                         <figcpation class="text">Recieve personalized notifications about the world around you
@@ -352,7 +352,7 @@
             <div class="slides">
                 <p class="number  text">3.</p>
                 <img class="slideImages" id="screenshot3" src="media/camera.jpg"
-                    alt="A screenshot of the applications picture submitions screen">
+                    alt="A screenshot of the applications picture submission screen">
                 <p class="text">
                     If there is information missing, users have the ability to submit their own to upload to the
                     database. The picture will then be translated into text, and uploaded to the database.
@@ -426,6 +426,7 @@
     <footer>
         <nav aria-labelledby="landmarkFooter">
             <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
+            
             <ul class="sitemapFooter" id="sitemapIndex">
                 <li class="sitemapOverskrift siteMapItem">
                     <a href="index.html">
@@ -461,8 +462,8 @@
             </ul>
 
             <section class="personerContainer">
+                <h3 class="lagetAvHeading">Created by:</h3>
                 <ul class="sitemapFooter" id="personer">
-                    <h2 class="lagetAvHeading">Created by:</h2>
                     <li>
                         <p>Hajin Barzingi</p>
                     </li>
