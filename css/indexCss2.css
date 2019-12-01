@@ -540,8 +540,8 @@ a:focus {
 #btnAccept {   
     width: 120px;
     font-size: 1.1em;
-    background-color: black;
-    color: white;
+    background-color: orange;
+    color: black;
     text-decoration: none;
     border: none;
     border-radius: 5px;
