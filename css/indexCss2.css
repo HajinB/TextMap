@@ -534,6 +534,7 @@ a:focus {
     background-color: #303030;
     z-index: 999;
     position: relative;
+    padding-bottom: 10px;
 }
 
 #btnAccept {   
