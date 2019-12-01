@@ -510,6 +510,7 @@ a:focus {
     height: 2.1em;
     width: 6.3em;
     text-align: center;
+    -webkit-box-shadow: 0 3px 10px 1px black;
     box-shadow: 0 3px 10px 1px black;
     text-decoration: none;
     cursor: pointer;
@@ -841,7 +842,6 @@ nav>ul>li>a {
     
     .headerFigure {
         width: 100%;
-        min-height: none;
         display: block;
         height: 50%;
         float: none;
