@@ -75,6 +75,7 @@ body {
 .table {
     margin-left: 1.5em;
     line-height: 1.4em;
+    list-style: initial;
 }
 
 .table>li>a {
@@ -91,6 +92,7 @@ body {
 
 .delTable {
     margin-left: 1.5em;
+    list-style: circle;
 }
 
 .survey > img {

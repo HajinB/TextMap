@@ -65,9 +65,6 @@ main {
     text-decoration-color: orange;
 }
 
-#mainheader{
-    text-align: center;
-}
 
 ul>li {
     list-style: none;
@@ -181,13 +178,9 @@ a.skipLink:hover {
 
 .textSize {
     /*grid-column: 2;*/
-    width: 0.333em;
-    border-right: 1px solid black;
+    width: 0.33em;
     /* box-shadow: 0 3px 10px 1px black; */
-    margin-left: 20vw;
     display: inline-block;
-    text-align: center;
-    margin-right: 0;
     float: left;
     justify-content: right;
     -webkit-box-flex: 0.5;
@@ -195,16 +188,10 @@ a.skipLink:hover {
     flex: 0.5;
     position: relative;
     font-size: 1.3em;
+    margin-left: 55vw !important;
 }
 
-.textSize {
-    margin-left: 30vw !important;
 
-}
-
-.li-language{
-    margin-top: 0.8em;
-}
 
 @supports ((display: -moz-flex) or
           ((display: -webkit-box) or (display: flex))){
@@ -238,7 +225,7 @@ a.skipLink:hover {
 #dropBtn {
     border: none;
     background-color: inherit;
-    height: 20px;
+    height: 5px;
 }
 
 #dropBtn:hover {
@@ -257,17 +244,17 @@ a.skipLink:hover {
 
 #sizeValg1,
 #size1NoJs {
-    font-size: 1em;
+    font-size: 12px;
 }
 
 #sizeValg2,
 #size2NoJs {
-    font-size: 1.5em;
+    font-size: 15px;
 }
 
 #sizeValg3,
 #size3NoJs {
-    font-size: 2em;
+    font-size: 20px;
 }
 
 #size1NoJs>a,
@@ -380,9 +367,6 @@ a.skipLink:hover {
     display: none;
 }
 
-#hamburger {
-    display: none;
-}
 
 #txtListe>li {
     list-style: none;
@@ -400,7 +384,6 @@ a.skipLink:hover {
 }
 
 .presentation {
-    text-align: center;
     position: relative;
     text-align: left;
     display: inline-block;
@@ -451,7 +434,8 @@ a.skipLink:hover {
 }
 
 .txtHead {
-    text-decoration: none;
+    text-decoration: #000000;
+    font-weight: bold;
     color: Black;
     font-size: 1.82em;
     position: static;
@@ -486,9 +470,6 @@ a:focus {
     text-decoration: none;
 }
 
-.backToTop>a {
-    color: pink;
-}
 
 .backToTop {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -508,7 +489,8 @@ a:focus {
 }
 
 .imgFlag {
-    width: 1.9em;
+    width: 1.7em;
+    border-radius: 10px;
 }
 
 #cookiesBox {
@@ -550,6 +532,11 @@ a:focus {
 
 #cookiesTxt {
     margin-right: 125px;
+}
+
+.sitater>h1 {
+    text-align: left;
+    clear: left;
 }
 
 .headerMain {
@@ -670,13 +657,12 @@ background-color: #550f78;
     background: #f9f9f9;
 }
 
-
 .sitater {
     width: 50%;
     float: left;
     display: inline-block;
     white-space: normal;
-    text-align: center;
+    text-align: left;
     min-height: 50vh;
     background: #f9f9f9;
 }
@@ -687,17 +673,20 @@ background-color: #550f78;
     margin: 0 auto;
 }
 
-.sitater h1 {
+.sitater>h1 {
     font-size: 2.5em;
     margin-top: 2.1em;
     vertical-align: middle;
-    text-align: left;
+    font-weight: bold;
+
+}
+#mainheader {
+    margin-left: 1.8em;
 }
 
 video{
     width: 100%;
     height: auto;
-
 }
 
 .homeVideo {
@@ -834,7 +823,6 @@ nav>ul>li>a {
     .headerFigure {
         width: 100%;
         display: block;
-        height: 50%;
         float: none;
         -o-object-fit: cover;
         object-fit: cover;
