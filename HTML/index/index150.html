@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: large">
+
+<head>
+    <title>Home - TextMap Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="yes" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/indexCss2.css" />
+    <link rel="icon" href="../../media/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+<div id="cookiesBox">
+    <div id="cookiesTxt">
+        <a>We use localStorage to offer you a better experience. By continuing to use this website, you consent to the use of localStorage in accordance with our <a id="cookiesLink" href="../policy.html">localStorage Policy</a></a>
+    </div>
+    <button id="btnAccept">Accept</button>
+</div>
+
+<nav aria-labelledby="landmarkControls" class="controls" id="controls">
+    <h2 id="landmarkControls" class="landmarkControls">Controls</h2>
+
+    <ul class="ul-controls">
+        <li class="skiplinkWrapper">
+            <div class="li-skipLink">
+                <a tabindex="0" href="#mainheader" class="skipLink" id="skipLink">Skip to main content
+                </a>
+            </div>
+        </li>
+
+        <li aria-haspopup="true" aria-expanded="false" class="textSize textSizeJS" id="textSize">
+            <button id="dropBtn" class="txtControls dropBtn" tabindex="0" aria-expanded="false">Change font size
+            </button>
+            <ul class="textSizeDrop">
+                <li id="size1"><button id="sizeValg1" tabindex="0" class="textSizeValg" data-valg="0">T 100% </button></li>
+                <li id="size2"><button id="sizeValg2" tabindex="0" class="textSizeValg" data-valg="1">T 150% </button></li>
+                <li id="size3"><button id="sizeValg3" tabindex="0" class="textSizeValg" data-valg="2">T 200% </button></li>
+            </ul>
+        </li>
+
+
+        <li class="textSize" id="textSizeNoJS">
+            <a href="../textsize.html" class="txtControls">Change font size
+            </a>
+        </li>
+
+
+        <li class="li-language" lang="no">
+            <a class="txtControls" href="index150Norsk.html">
+                Norsk<img alt="Bytt til norsk" class="imgFlag" src="../../media/norwegian.png">
+            </a>
+
+        </li>
+    </ul>
+</nav>
+
+<nav id="header">
+    <div id="headBoks">
+
+        <a class="logoHead" href="index150.html">
+
+            <img title="Home" id="aLogo" src="../../media/TextMapLogoFin.png" alt="text map banner">
+        </a>
+
+        <ul id="txtListe">
+            <li class="home">
+                <a class="txtHead active" href="index150.html">Home</a>
+            </li>
+
+            <li class="problem">
+                <a class="txtHead" href="../product/product150.html">Product</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="banner">
+</div>
+
+<main class="content">
+    <section class="homeWrapper" id="ideaSection">
+
+
+        <div class="sitater">
+            <h1 id="mainheader">TextMap</h1>
+            <p>
+                The app that makes real world text accessible. Connect with the world.
+                Find important information near you, today.
+            </p>
+        </div>
+
+        <div class="homeVideo">
+            <div class="videoWrap" aria-labelledby="landmarkVideo">
+                <h2 id="landmarkVideo" class="landmarkControls">Video explaining usage of TextMap</h2>
+                <video title="Text map video" id="videoHome" width="400" height="300"
+                       preload="metadata"
+                       poster="../../media/poster.jpg"
+                       controls>
+                    <source src="../../media/video_mp4.mp4" type="video/mp4" />
+                    <source src="../../media/video_webm.webm" type="video/webm" />
+                    <track src="../../media/subtitles-en.vtt" kind="subtitles" default srclang="en" label="English">
+                    <track src="../../media/subtitles-no.vtt" kind="subtitles" srclang="no" label="Norsk">
+                    <p>A video demonstration of uses for the TextMap app.
+                        Download the video here:<a href="https://github.com/olagberg/TextMap-video/archive/master.zip" target="_blank">(direct download)<img class="externallinkLogo" alt="Video download opens in a new window" width="12"
+                                                                                                                                                             src="../../media/externallink.png"></a>
+                        Watch it at YouTube here: <a href="https://youtu.be/qqEQsEGVtHQ" target="_blank">(opens in a new window)</a></p>
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <nav aria-labelledby="landmarkFooter">
+        <h2 id="landmarkFooter" class="landmarkControls">Footer</h2>
+
+        <ul class="sitemapFooter" id="sitemapIndex">
+            <li class="sitemapOverskrift siteMapItem">
+                <a href="index150.html">
+                    <h3>Home</h3>
+                </a>
+            </li>
+
+            <li class="siteMapItem"><a href="index150.html#ideaSection">Idea</a></li>
+
+            <li class="siteMapItem"><a href="index150.html#videoHome">Video</a></li>
+
+            <li class="siteMapItem"><a href="https://github.com/olagberg/TextMap-video/archive/master.zip" target="_blank">
+                Download video
+                <img class="externallinkLogo" alt="Video download opens in a new window" width="12"
+                     src="../../media/externallink.png">
+            </a>
+            </li>
+        </ul>
+
+        <ul class="sitemapFooter" id="sitemapProblem">
+            <li class="siteMapItem sitemapOverskrift">
+                <a href="../product/product150.html">
+                    <h3>Product</h3>
+                </a>
+            </li>
+
+            <li class="siteMapItem">
+                <a href="../product/product150.html#Problem">Problem</a>
+            </li>
+
+            <li class="siteMapItem">
+                <a href="../product/product150.html#Solution">Solution</a>
+            </li>
+
+            <li class="siteMapItem"> <a href="../product/product150.html#Sources">Sources</a></li>
+        </ul>
+
+        <section class="personerContainer">
+            <h3 class="lagetAvHeading">Created by:</h3>
+            <ul class="sitemapFooter" id="personer">
+
+                <li>
+                    <p>Hajin Barzingi</p>
+                </li>
+
+                <li>
+                    <p>Tom Basmo</p>
+                </li>
+                <li>
+                    <p>Ola Gynnild Berg</p>
+                </li>
+                <li>
+                    <p>Rosa Berg</p>
+                </li>
+                <li>
+                    <p>Nikola Dordevic</p>
+                </li>
+                <li>
+                    <p>Nina Hübertz Emaus</p>
+                </li>
+                <li>
+                    <p>Jørund Topp Løvlien</p>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</footer>
+<a class="backToTop" id="backToTop" href="#controls"><span class="backToTopSpan">Back to Top</span></a>
+
+
+<script type="text/javascript" src="../../js/main.js"></script>
+</body>
+
+</html>
